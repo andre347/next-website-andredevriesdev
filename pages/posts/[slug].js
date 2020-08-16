@@ -6,8 +6,15 @@ import matter from "gray-matter";
 
 export default function Blog({ content, frontmatter }) {
   return (
-    <div className="py-4 mb-4 mr-8 ml-8">
-      <ReactMarkdown escapeHtml={false} source={content} />
+    <div
+      className="divide-y xl:divide-y-0 divide-orange-200 xl:grid xl:grid-cols-4 xl:col-gap-6 pb-16 xl:pb-20"
+      style={{ gridTemplateRows: "auto 1fr" }}
+    >
+      <div className="divide-y divide-orange-200 xl:pb-0 xl:col-span-3 xl:row-span-2">
+        <div className="prose max-w-none pt-10 pb-8">
+          <ReactMarkdown escapeHtml={false} source={content} />
+        </div>
+      </div>
     </div>
   );
 }
