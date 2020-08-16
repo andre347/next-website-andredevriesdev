@@ -17,12 +17,12 @@ const Home = ({ allBlogsData }) => {
           Blog
         </h1>
         <p className="text-lg leading-7 text-gray-500">
-          Blogs related to data, analytics, web development & cloud.
+          My writings about data, analytics, web development & the cloud.
         </p>
       </div>
-      <ul className="divide-y divide-orange-200">
+      <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
-          <li key={id} className="py-10">
+          <li key={id} className="py-9">
             <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
               <dl>
                 <dt className="sr-only">Published on</dt>
@@ -56,6 +56,16 @@ const Home = ({ allBlogsData }) => {
             </article>
           </li>
         ))}
+        <div className="text-base leading-6 font-medium">
+          <Link href={"/posts"}>
+            <a
+              className="text-gray-500 hover:text-gray-600"
+              aria-label={`View all blogs`}
+            >
+              View all blogs &rarr;
+            </a>
+          </Link>
+        </div>
       </ul>
     </div>
   );

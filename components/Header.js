@@ -9,12 +9,12 @@ function Header() {
         </Link>
       </div>
       <div className="text-base leading-5">
-        <Link href="/about">
+        <Link href="/pages/about">
           <a
             aria-label="andredevries.dev/about"
             className="font-medium text-gray-500 hover:text-gray-700"
           >
-            About &rarr;
+            About me &rarr;
           </a>
         </Link>
       </div>
