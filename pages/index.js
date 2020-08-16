@@ -14,22 +14,49 @@ const Home = ({ allBlogsData }) => {
       </Head>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
         <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          Latest
+          Blog
         </h1>
         <p className="text-lg leading-7 text-gray-500">
-          Blogs and videos related to data, web development & cloud.
+          Blogs related to data, analytics, web development & cloud.
         </p>
       </div>
-      {allBlogsData.map(({ title, id, description }) => (
-        <div key={id} className="py-12 mb-4 mr-8 ml-8">
-          <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-            <a className="text-2xl font-semibold text-gray-600 no-underline">
-              {title}
-            </a>
-          </Link>
-          <div className="prose max-w-none text-gray-500">{description}</div>
-        </div>
-      ))}
+      <ul className="divide-y divide-orange-200">
+        {allBlogsData.map(({ title, id, description, date, category }) => (
+          <li key={id} className="py-10">
+            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+              <dl>
+                <dt className="sr-only">Published on</dt>
+                <dd className="text-base leading-6 font-medium text-gray-500">
+                  <time dateTime={date}>{date}</time> &bull;{" "}
+                  <span>{category}</span>
+                </dd>
+              </dl>
+              <div className="space-y-5 xl:col-span-3">
+                <div className="space-y-6">
+                  <h2 className="text-2xl leading-8 font-bold tracking-tight">
+                    <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
+                      <a className="text-gray-800">{title}</a>
+                    </Link>
+                  </h2>
+                  <div className="prose max-w-none text-gray-500">
+                    {description}
+                  </div>
+                </div>
+                <div className="text-base leading-6 font-medium">
+                  <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
+                    <a
+                      className="text-orange-500 hover:text-orange-600"
+                      aria-label={`Read "${title}"`}
+                    >
+                      Read more &rarr;
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </article>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
@@ -38,7 +65,7 @@ const Home = ({ allBlogsData }) => {
 
 export async function getStaticProps() {
   // Get external data from the file system, API, DB, etc.
-  const allBlogsData = getSortedBlogsData();
+  const allBlogsData = getSortedBlogsData().slice(0, 3);
   console.log(typeof allBlogsData);
 
   // The value of the `props` key will be

@@ -1,6 +1,10 @@
 import "../css/tailwind.css";
 import Head from "next/head";
 
+// bring in components
+import Header from "../components/Header";
+import Section from "../components/Section";
+
 function App({ Component, pageProps }) {
   return (
     <div className="antialiased">
@@ -26,7 +30,12 @@ function App({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Component {...pageProps} />
+      <Section>
+        <Header />
+      </Section>
+      <Section>
+        <Component {...pageProps} />
+      </Section>
     </div>
   );
 }
