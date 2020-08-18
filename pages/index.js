@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 
-// get all the blog
+// get all the blogs
 import { getSortedBlogsData } from "../lib/blogs";
 
 const Home = ({ allBlogsData }) => {
