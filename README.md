@@ -20,3 +20,7 @@ https://gist.github.com/RobinMalfait/a90e8651196c273dfa51eec0f43e1676
 https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6
 
 # Image optimisation
+
+# Icons from
+
+https://simpleicons.org/

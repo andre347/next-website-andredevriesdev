@@ -1,4 +1,6 @@
 import React from "react";
+import Head from "next/head";
+
 import fs from "fs";
 import path from "path";
 import ReactMarkdown from "react-markdown/with-html";
@@ -11,6 +13,9 @@ export default function Blog({ content, frontmatter }) {
       className="divide-y xl:divide-y-0 divide-orange-200 xl:grid xl:grid-cols-4 xl:col-gap-6 pb-16 xl:pb-20"
       style={{ gridTemplateRows: "auto 1fr" }}
     >
+      <Head>
+        <title>{frontmatter.title} - Andre de Vries</title>
+      </Head>
       <div className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-orange-200">
         I can put more content here! And I need to remove the title from the
         markdown files

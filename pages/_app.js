@@ -4,6 +4,7 @@ import Head from "next/head";
 // bring in components
 import Header from "../components/Header";
 import Section from "../components/Section";
+import Footer from "../components/Footer";
 
 function App({ Component, pageProps }) {
   return (
@@ -35,6 +36,9 @@ function App({ Component, pageProps }) {
       </Section>
       <Section>
         <Component {...pageProps} />
+      </Section>
+      <Section>
+        <Footer />
       </Section>
     </div>
   );
