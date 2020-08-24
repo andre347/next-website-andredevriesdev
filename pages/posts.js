@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import Head from "next/head";
+
 // get all the blogs
 import { getSortedBlogsData } from "../lib/blogs";
 
@@ -15,14 +17,111 @@ function Posts({ allBlogsData }) {
     //     </li>
     //   ))}
     // </div>
-    <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-      <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-        <div className="flex-shrink-0">
-          <img
-            className="h-48 w-full object-cover"
-            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-            alt=""
-          />
+    <div className="divide-y-2 divide-orange-100">
+      <Head>
+        <title>All Blogs - Andre de Vries</title>
+      </Head>
+      <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          All Blogs
+        </h1>
+        <p className="text-lg leading-7 text-gray-500">
+          My writings about data, analytics, web development & the cloud.
+        </p>
+      </div>
+
+      <div class="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
+        <div>
+          <p class="text-sm leading-5 text-gray-500">
+            <time datetime="2020-03-16">Mar 16, 2020</time>
+          </p>
+          <a href="#" class="block">
+            <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+              Boost your conversion rate
+            </h3>
+            <p class="mt-3 text-base leading-6 text-gray-500">
+              Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
+              vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+              exercitationem placeat consectetur nulla deserunt vel. Iusto
+              corrupti dicta.
+            </p>
+          </a>
+          <div class="mt-3">
+            <a
+              href="#"
+              class="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+            >
+              Read full story
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm leading-5 text-gray-500">
+            <time datetime="2020-03-10">Mar 10, 2020</time>
+          </p>
+          <a href="#" class="block">
+            <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+              How to use search engine optimization to drive sales
+            </h3>
+            <p class="mt-3 text-base leading-6 text-gray-500">
+              Optio cum necessitatibus dolor voluptatum provident commodi et.
+              Qui aperiam fugiat nemo cumque.
+            </p>
+          </a>
+          <div class="mt-3">
+            <a
+              href="#"
+              class="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+            >
+              Read full story
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm leading-5 text-gray-500">
+            <time datetime="2020-02-12">Feb 12, 2020</time>
+          </p>
+          <a href="#" class="block">
+            <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+              Improve your customer experience
+            </h3>
+            <p class="mt-3 text-base leading-6 text-gray-500">
+              Cupiditate maiores ullam eveniet adipisci in doloribus nulla
+              minus. Voluptas iusto libero adipisci rem et corporis.
+            </p>
+          </a>
+          <div class="mt-3">
+            <a
+              href="#"
+              class="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+            >
+              Read full story
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm leading-5 text-gray-500">
+            <time datetime="2020-01-29">Jan 29, 2020</time>
+          </p>
+          <a href="#" class="block">
+            <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+              Writing effective landing page copy
+            </h3>
+            <p class="mt-3 text-base leading-6 text-gray-500">
+              Ipsum voluptates quia doloremque culpa qui eius. Id qui id officia
+              molestias quaerat deleniti. Qui facere numquam autem libero quae
+              cupiditate asperiores vitae cupiditate. Cumque id deleniti
+              explicabo.
+            </p>
+          </a>
+          <div class="mt-3">
+            <a
+              href="#"
+              class="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+            >
+              Read full story
+            </a>
+          </div>
         </div>
       </div>
     </div>
