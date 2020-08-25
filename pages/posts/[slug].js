@@ -16,11 +16,11 @@ export default function Blog({ content, frontmatter }) {
       <Head>
         <title>{frontmatter.title} - Andre de Vries</title>
       </Head>
-      <div className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-orange-200">
+      {/* <div className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-orange-200">
         I can put more content here! And I need to remove the title from the
         markdown files
-      </div>
-      <div className="divide-y divide-orange-200 xl:pb-0 xl:col-span-3 xl:row-span-2">
+      </div> */}
+      <div className="divide-y divide-orange-200 xl:pb-0 xl:col-span-4 xl:row-span-2">
         <div className="prose max-w-none pt-10 pb-8">
           <ReactMarkdown escapeHtml={false} source={content} />
         </div>

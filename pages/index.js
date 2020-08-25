@@ -4,10 +4,11 @@ import Head from "next/head";
 
 // get all the blogs
 import { getSortedBlogsData } from "../lib/blogs";
+import Layout from "../components/Layout";
 
 const Home = ({ allBlogsData }) => {
   return (
-    <div className="divide-y-2 divide-orange-100">
+    <Layout>
       <Head>
         <title>Andre de Vries</title>
       </Head>
@@ -22,7 +23,7 @@ const Home = ({ allBlogsData }) => {
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
           <li key={id} className="py-9">
-            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-2 xl:items-baseline">
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base leading-6 font-medium text-gray-500">
@@ -30,7 +31,7 @@ const Home = ({ allBlogsData }) => {
                   <span>{category}</span>
                 </dd>
               </dl>
-              <div className="space-y-5 xl:col-span-3">
+              <div className="space-y-5 xl:col-span-4">
                 <div className="space-y-6">
                   <h2 className="text-2xl leading-8 font-bold tracking-tight">
                     <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
@@ -69,7 +70,7 @@ const Home = ({ allBlogsData }) => {
           <span className="inline-flex rounded-md shadow-sm"></span>
         </div>
       </ul>
-    </div>
+    </Layout>
   );
 };
 
