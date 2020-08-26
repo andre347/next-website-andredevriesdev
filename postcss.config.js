@@ -8,7 +8,7 @@ module.exports = {
             content: ["./components/**/*.js", "./pages/**/*.js"],
             defaultExtractor: (content) =>
               content.match(/[\w-/:]+(?<!:)/g) || [],
-            whitelist: ["pre", "code", ".prose"],
+            whitelist: ["pre", "code", ".prose", "ol", "li"],
           },
         }
       : {}),
