@@ -18,6 +18,8 @@ module.exports = {
               "h3",
               "h1",
               "img",
+              "strong",
+              "em",
             ],
           },
         }
