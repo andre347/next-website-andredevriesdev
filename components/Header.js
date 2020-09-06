@@ -5,7 +5,12 @@ function Header() {
     <header className="flex justify-between items-center py-10">
       <div>
         <Link href="/">
-          <a aria-label="andredevries.dev">Header and Icon here</a>
+          <a
+            aria-label="andredevries.dev"
+            className="text-sm font-light  uppercase md:text-base lg:text-xl"
+          >
+            Andre <span className="font-bold">de Vries</span>
+          </a>
         </Link>
       </div>
       <div className="text-base leading-5">
