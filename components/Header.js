@@ -14,12 +14,20 @@ function Header() {
         </Link>
       </div>
       <div className="text-base leading-5">
+        <Link href="/posts">
+          <a
+            aria-label="andredevries.dev/posts"
+            className="font-medium text-gray-500 hover:text-gray-700"
+          >
+            Blogs |{" "}
+          </a>
+        </Link>
         <Link href="/pages/about">
           <a
             aria-label="andredevries.dev/about"
             className="font-medium text-gray-500 hover:text-gray-700"
           >
-            About me &rarr;
+            About
           </a>
         </Link>
       </div>

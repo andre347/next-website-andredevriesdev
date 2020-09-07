@@ -7,14 +7,6 @@ const meta = {
 
 function Introduction() {
   return (
-    // <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-    //   <h1 className="text-4xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
-    //     Hi there 👋
-    //   </h1>
-    //   <p className="text-lg leading-7 text-gray-500">
-    //     My writings about data, analytics, web development & the cloud.
-    //   </p>
-    // </div>
     <div className="flex flex-col pt-6 pb-8 items-center space-y-8 sm:items-start sm:space-y-0 sm:flex-row sm:space-x-8">
       <a className="flex-shrink-0" href="/">
         <span className="sr-only">Home</span>
@@ -25,7 +17,7 @@ function Introduction() {
         />
       </a>
       <div className="text-center sm:text-left">
-        <h1 className="lg:text-3xl leading-9 tracking-wide font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="lg:text-3xl leading-9 tracking-wide font-extrabold text-gray-900 sm:text-4xl sm:leading-10 text-3xl">
           Hi! I'm Andre
         </h1>
         <div className="mt-2">
