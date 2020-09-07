@@ -2,7 +2,7 @@ import React from "react";
 
 const meta = {
   description:
-    "I'm a Solutions Engineer who works predominantly with Tableau, Alteryx and AWS. I like to write & teach about data analytics, web development & the cloud.",
+    "I'm a Solutions Engineer who predominantly works with Tableau, Alteryx and AWS. I like to write & teach about data analytics, web development & the cloud.",
 };
 
 function Introduction() {
