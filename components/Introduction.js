@@ -2,7 +2,7 @@ import React from "react";
 
 const meta = {
   description:
-    "Hi, I'm Andre! I'm a Solutions Engineer who works predominantly with Tableau, Alteryx and AWS. I like to write & teach about data analytics, web development & the cloud.",
+    "I'm a Solutions Engineer who works predominantly with Tableau, Alteryx and AWS. I like to write & teach about data analytics, web development & the cloud.",
 };
 
 function Introduction() {
@@ -25,8 +25,8 @@ function Introduction() {
         />
       </a>
       <div className="text-center sm:text-left">
-        <h1 className="lg:text-3xl uppercase leading-9 tracking-wide font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-          Andre de Vries
+        <h1 className="lg:text-3xl leading-9 tracking-wide font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+          Hi! I'm Andre
         </h1>
         <div className="mt-2">
           <p className="text-lg leading-7 tracking-tight text-gray-500">
@@ -36,28 +36,36 @@ function Introduction() {
         <div className="mt-4 flex justify-center space-x-2 text-gray-400 sm:justify-start">
           <a
             className="text-gray-500 hover:text-gray-900"
-            href="https://podcasts.apple.com/us/podcast/feed/id931714873"
+            href="https://twitter.com/andre347_"
+            target="__blank"
+            rel="noopener noreferrer"
           >
             Twitter
           </a>
           <span>•</span>
           <a
             className="text-gray-500 hover:text-gray-900"
-            href="https://overcast.fm/itunes931714873"
+            href="https://github.com/andre347"
+            target="__blank"
+            rel="noopener noreferrer"
           >
             Github
           </a>
           <span>•</span>
           <a
             className="text-gray-500 hover:text-gray-900"
-            href="https://feeds.transistor.fm/full-stack-radio"
+            href="https://dev.to/andre347"
+            target="__blank"
+            rel="noopener noreferrer"
           >
             Dev.to
           </a>
           <span>•</span>
           <a
             className="text-gray-500 hover:text-gray-900"
-            href="https://feeds.transistor.fm/full-stack-radio"
+            href="https://www.youtube.com/c/AndredeVries"
+            target="__blank"
+            rel="noopener noreferrer"
           >
             YouTube
           </a>

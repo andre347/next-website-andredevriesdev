@@ -39,7 +39,7 @@ const Home = ({ allBlogsData }) => {
                 <div className="text-base leading-6 font-medium">
                   <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
                     <a
-                      className="text-orange-500 hover:text-orange-600"
+                      className="text-orange-500 hover:text-orange-600 transition ease-in-out duration-150 text-base leading-6"
                       aria-label={`Read "${title}"`}
                     >
                       Read more &rarr;
