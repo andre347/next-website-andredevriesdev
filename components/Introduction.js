@@ -50,7 +50,7 @@ function Introduction() {
             target="__blank"
             rel="noopener noreferrer"
           >
-            Dev.to
+            DEV.to
           </a>
           <span>•</span>
           <a
