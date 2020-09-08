@@ -1,6 +1,6 @@
 ---
 title: "3 Tooltip Tips in Tableau"
-date: "2016-05-15 15:00:00"
+date: "2016-05-15"
 template: post
 draft: false
 slug: "/posts/three-tooltip-tips-in-tableau/"
