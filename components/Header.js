@@ -19,14 +19,16 @@ function Header() {
             aria-label="andredevries.dev/posts"
             className="font-medium text-gray-500 hover:text-gray-700"
           >
-            Blogs |{" "}
+            Blogs{" "}
           </a>
         </Link>
+        <span className="font-medium text-gray-500">|</span>
         <Link href="/pages/about">
           <a
             aria-label="andredevries.dev/about"
             className="font-medium text-gray-500 hover:text-gray-700"
           >
+            {" "}
             About
           </a>
         </Link>

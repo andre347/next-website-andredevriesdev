@@ -8,15 +8,6 @@ import { getSortedBlogsData } from "../lib/blogs";
 
 function Posts({ allBlogsData }) {
   return (
-    // <div>
-    //   {allBlogsData.map(({ title, id }) => (
-    //     <li>
-    //       <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-    //         <a className="text-gray-800">{title}</a>
-    //       </Link>
-    //     </li>
-    //   ))}
-    // </div>
     <div className="divide-y-2 divide-orange-100">
       <Head>
         <title>All Blogs - Andre de Vries</title>
@@ -96,14 +87,16 @@ function Posts({ allBlogsData }) {
             <p className="text-sm leading-5 text-gray-500">
               <time dateTime={date}>{date}</time>
             </p>
-            <a href="#" className="block">
-              <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                {title}
-              </h3>
-              <p className="mt-3 text-base leading-6 text-gray-500">
-                {description}
-              </p>
-            </a>
+            <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
+              <a className="block">
+                <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                  {title}
+                </h3>
+                <p className="mt-3 text-base leading-6 text-gray-500">
+                  {description}
+                </p>
+              </a>
+            </Link>
             <div className="mt-3">
               <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
                 <a

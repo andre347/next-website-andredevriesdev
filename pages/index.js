@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 
 // get all the blogs
 import { getSortedBlogsData } from "../lib/blogs";
@@ -10,9 +9,6 @@ import Introduction from "../components/Introduction";
 const Home = ({ allBlogsData }) => {
   return (
     <Layout>
-      {/* <Head>
-        <title>Andre de Vries</title>
-      </Head> */}
       <Introduction />
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
