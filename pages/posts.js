@@ -30,7 +30,7 @@ function Posts({ allBlogsData }) {
         </p>
         {/* Search box */}
         <div>
-          <label htmlfor="search_blog" className="sr-only">
+          <label htmlFor="search_blog" className="sr-only">
             Search
           </label>
           <div className="flex rounded-md shadow-sm">
