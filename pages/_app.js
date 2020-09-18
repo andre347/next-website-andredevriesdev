@@ -6,6 +6,23 @@ import Header from "../components/Header";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
 
+const meta = {
+  title: "Andre de Vries",
+  twitterCard:
+    "https://res.cloudinary.com/dmim37dbf/image/upload/v1599218497/video%20landing%20page/82558668-6092-4ae5-b120-ca5e01a3705e.png",
+  keywords: [
+    "tableau",
+    "alteryx",
+    "aws",
+    "cloud",
+    "blog",
+    "data analytics",
+    "data visualization",
+  ],
+  description:
+    "My writings about data, analytics, web development & the cloud.",
+};
+
 function App({ Component, pageProps }) {
   return (
     <div className="antialiased">
@@ -30,6 +47,13 @@ function App({ Component, pageProps }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
+        <meta content={meta.description} name="description" />
+        <meta content={meta.keywords.join(", ")} name="keywords" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Andre de Vries" />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <title>{meta.title}</title>
       </Head>
       <Section>
         <Header />

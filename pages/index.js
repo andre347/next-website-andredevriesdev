@@ -10,9 +10,9 @@ import Introduction from "../components/Introduction";
 const Home = ({ allBlogsData }) => {
   return (
     <Layout>
-      <Head>
+      {/* <Head>
         <title>Andre de Vries</title>
-      </Head>
+      </Head> */}
       <Introduction />
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
