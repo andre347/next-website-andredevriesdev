@@ -44,6 +44,20 @@ function App({ Component, pageProps }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-90804640-2"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-90804640-2');
+        `,
+          }}
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
         <meta content={meta.description} name="description" />
