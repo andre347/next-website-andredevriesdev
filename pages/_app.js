@@ -8,8 +8,7 @@ import Footer from "../components/Footer";
 
 const meta = {
   title: "Andre de Vries",
-  twitterCard:
-    "https://res.cloudinary.com/dmim37dbf/image/upload/v1599218497/video%20landing%20page/82558668-6092-4ae5-b120-ca5e01a3705e.png",
+  twitterCard: "",
   keywords: [
     "tableau",
     "alteryx",
