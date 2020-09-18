@@ -3,10 +3,26 @@ import Link from "next/link";
 
 import Head from "next/head";
 
+import { useOnClickOutside } from "../lib/useOnClickOutside";
+
 // get all the blogs
 import { getSortedBlogsData } from "../lib/blogs";
+import Dropdown from "../components/Dropdown";
 
 function Posts({ allBlogsData }) {
+  const [dropdown, setDropdown] = React.useState(false);
+  const dropdownRef = React.useRef();
+  useOnClickOutside(dropdownRef, () => setDropdown(false));
+
+  // filter for categories
+  const [filterBlogs, setFilterBlogs] = React.useState(allBlogsData);
+
+  // unique list of blog categories
+  const blogCategories = [
+    ...new Set(allBlogsData.map((blog) => blog.category)),
+  ];
+  console.log(blogCategories);
+
   return (
     <div className="divide-y-2 divide-orange-100">
       <Head>
@@ -50,39 +66,43 @@ function Posts({ allBlogsData }) {
                 placeholder="Search blogs"
               />
             </div>
-            <button className="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-r-md text-gray-700 bg-gray-50 hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
-              <svg
-                className="h-5 w-5 text-gray-400"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"
-                ></path>
-              </svg>
-              <span className="ml-2">Category</span>
-              <svg
-                className="ml-2.5 -mr-1.5 h-5 w-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
+            <div className="relative inline-block text-left">
+              <div>
+                <span ref={dropdownRef} className="rounded-md shadow-sm">
+                  <button
+                    onClick={() => setDropdown(!dropdown)}
+                    type="button"
+                    className="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-r-md text-gray-700 bg-gray-50 hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+                    id="options-menu"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    Category
+                    {/* <!-- Heroicon name: chevron-down --> */}
+                    <svg
+                      className="-mr-1 ml-2 h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </span>
+              </div>
+              <Dropdown dropdown={dropdown} categories={blogCategories} />
+            </div>
+
+            {/* <Dropdown /> */}
           </div>
         </div>
       </div>
 
       <div className="mt-4 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
-        {allBlogsData.map(({ title, id, description, date, category }) => (
+        {filterBlogs.map(({ title, id, description, date, category }) => (
           <div key={id}>
             <p className="text-sm leading-5 text-gray-500">
               <time dateTime={date}>{date}</time>
