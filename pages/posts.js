@@ -77,14 +77,18 @@ function Posts({ allBlogsData }) {
                 </svg>
               </div>
               <input
-                id="search_blog"
+                id="search_blog_mobile"
                 className="form-input block w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:hidden"
-                placeholder="Search blogs.."
+                placeholder={`Search ${filterBlogs.length} ${
+                  selectedCategory === "All" ? "" : selectedCategory + " "
+                }${filterBlogs.length > 1 ? "blogs" : "blog"}..`}
               />
               <input
-                id="search_blog"
+                id="search_blog_desktop"
                 className="hidden form-input w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:block sm:text-sm sm:leading-5"
-                placeholder="{countOfBlogs}"
+                placeholder={`Search ${filterBlogs.length} ${
+                  selectedCategory === "All" ? "" : selectedCategory + " "
+                }${filterBlogs.length > 1 ? "blogs" : "blog"}..`}
               />
             </div>
             <div className="hidden relative sm:inline-block text-left">

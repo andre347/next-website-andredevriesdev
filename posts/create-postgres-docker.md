@@ -4,7 +4,7 @@ date: "2020-08-18"
 template: post
 draft: false
 description: Have you ever had the problem where a tool or a piece of software works fine on your machine, but the moment you install it on someone else's you get all kinds of issues? Well, I have, and particularly for this reason Docker was invented! In this blog post we will take a quick look at what Docker is and how easy it is to run a database in a Docker container. This container will work on any machine. I promise. Along the way you also learn some Docker specific lingo.
-category: Cloud
+category: Docker
 socialImage: https://www.theinformationlab.co.uk/wp-content/uploads/2017/08/alteryx_logo.png
 tags:
   - aws
