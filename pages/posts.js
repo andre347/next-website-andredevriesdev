@@ -40,7 +40,8 @@ function Posts({ allBlogsData }) {
 
   const countOfBlogs = () => {
     console.log(allBlogsData.length.toString());
-    return allBlogsData.length.toString();
+    // return allBlogsData.length.toString();
+    return "Search all the blogs";
   };
 
   return (
@@ -78,15 +79,15 @@ function Posts({ allBlogsData }) {
               <input
                 id="search_blog"
                 className="form-input block w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:hidden"
-                placeholder="Search"
+                placeholder="Search blogs.."
               />
               <input
                 id="search_blog"
                 className="hidden form-input w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:block sm:text-sm sm:leading-5"
-                placeholder={countOfBlogs}
+                placeholder="{countOfBlogs}"
               />
             </div>
-            <div className="relative inline-block text-left">
+            <div className="hidden relative sm:inline-block text-left">
               <div>
                 <span ref={dropdownRef} className="rounded-md shadow-sm">
                   <button
@@ -120,8 +121,6 @@ function Posts({ allBlogsData }) {
                 selectedCategory={selectedCategory}
               />
             </div>
-
-            {/* <Dropdown /> */}
           </div>
         </div>
       </div>
