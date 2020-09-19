@@ -16,12 +16,32 @@ function Posts({ allBlogsData }) {
 
   // filter for categories
   const [filterBlogs, setFilterBlogs] = React.useState(allBlogsData);
+  const [selectedCategory, setselectedCategory] = React.useState("All");
+
+  function setCategory(category) {
+    setselectedCategory(category);
+    if (category == "All") {
+      setFilterBlogs(allBlogsData);
+    } else {
+      const filteredList = allBlogsData.filter(
+        (blog) => blog.category === category
+      );
+      setFilterBlogs(filteredList);
+    }
+
+    setDropdown(false);
+  }
 
   // unique list of blog categories
   const blogCategories = [
-    ...new Set(allBlogsData.map((blog) => blog.category)),
+    "All",
+    ...new Set(allBlogsData.map((blog) => blog.category).sort()),
   ];
-  console.log(blogCategories);
+
+  const countOfBlogs = () => {
+    console.log(allBlogsData.length.toString());
+    return allBlogsData.length.toString();
+  };
 
   return (
     <div className="divide-y-2 divide-orange-100">
@@ -29,7 +49,7 @@ function Posts({ allBlogsData }) {
         <title>All Blogs - Andre de Vries</title>
       </Head>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
           All Blogs
         </h1>
         <p className="text-lg leading-7 text-gray-500">
@@ -63,7 +83,7 @@ function Posts({ allBlogsData }) {
               <input
                 id="search_blog"
                 className="hidden form-input w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:block sm:text-sm sm:leading-5"
-                placeholder="Search blogs"
+                placeholder={countOfBlogs}
               />
             </div>
             <div className="relative inline-block text-left">
@@ -77,7 +97,7 @@ function Posts({ allBlogsData }) {
                     aria-haspopup="true"
                     aria-expanded="true"
                   >
-                    Category
+                    {selectedCategory}
                     {/* <!-- Heroicon name: chevron-down --> */}
                     <svg
                       className="-mr-1 ml-2 h-5 w-5"
@@ -85,15 +105,20 @@ function Posts({ allBlogsData }) {
                       fill="currentColor"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </button>
                 </span>
               </div>
-              <Dropdown dropdown={dropdown} categories={blogCategories} />
+              <Dropdown
+                dropdown={dropdown}
+                categories={blogCategories}
+                setCategory={setCategory}
+                selectedCategory={selectedCategory}
+              />
             </div>
 
             {/* <Dropdown /> */}

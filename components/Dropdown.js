@@ -1,11 +1,12 @@
 import React from "react";
 
-import { useOnClickOutside } from "../lib/useOnClickOutside";
-
-function Dropdown({ dropdown, categories }) {
-  //   const [dropdown, setDropdown] = React.useState(false);
-  //   const dropdownRef = React.useRef();
-  //   useOnClickOutside(dropdownRef, () => setDropdown(false));
+function Dropdown({ dropdown, categories, setCategory, selectedCategory }) {
+  // change to bold when selected by user
+  const classForCategory = (item) => {
+    return `${
+      item === selectedCategory ? "font-bold" : null
+    } block text-gray-700 px-4 py-2 text-sm leading-5  hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 cursor-pointer`;
+  };
 
   return (
     <div
@@ -22,14 +23,15 @@ function Dropdown({ dropdown, categories }) {
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          {categories.map((item) => (
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-              role="menuitem"
+          {categories.map((item, idx) => (
+            <div
+              type="button"
+              key={idx}
+              onMouseDown={() => setCategory(item)}
+              className={classForCategory(item)}
             >
               {item}
-            </a>
+            </div>
           ))}
         </div>
       </div>
