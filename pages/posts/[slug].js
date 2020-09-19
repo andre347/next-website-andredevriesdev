@@ -19,7 +19,7 @@ export default function Blog({ content, frontmatter }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@andre347_" />
         <meta name="twitter:title" content={frontmatter.title} />
-        <meta name="twitter:description" content={frontmatter.description} />
+        {/* <meta name="twitter:description" content={frontmatter.description} /> */}
         <meta name="twitter:image" content={frontmatter.socialImage} />
       </Head>
       {/* <div className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-orange-200">
