@@ -5,6 +5,10 @@ import Link from "next/link";
 import { getSortedBlogsData } from "../lib/blogs";
 import Layout from "../components/Layout";
 import Introduction from "../components/Introduction";
+import tinytime from "tinytime";
+
+// template for date
+const template = tinytime("{MMMM} {DD}, {YYYY}");
 
 const Home = ({ allBlogsData }) => {
   return (
@@ -17,8 +21,8 @@ const Home = ({ allBlogsData }) => {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base leading-6 font-medium text-gray-500">
-                  <time dateTime={date}>{date}</time> &bull;{" "}
-                  <span>{category}</span>
+                  <time dateTime={date}>{template.render(new Date(date))}</time>{" "}
+                  &bull; <span>{category}</span>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-4">

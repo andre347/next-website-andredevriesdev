@@ -5,6 +5,11 @@ import Head from "next/head";
 
 import { useOnClickOutside } from "../lib/useOnClickOutside";
 
+import tinytime from "tinytime";
+
+// template for date
+const template = tinytime("{MMMM} {DD}, {YYYY}");
+
 // get all the blogs
 import { getSortedBlogsData } from "../lib/blogs";
 import Dropdown from "../components/Dropdown";
@@ -147,7 +152,8 @@ function Posts({ allBlogsData }) {
         {filterBlogs.map(({ title, id, description, date, category }) => (
           <div key={id}>
             <p className="text-sm leading-5 text-gray-500">
-              <time dateTime={date}>{date}</time>
+              <time dateTime={date}>{template.render(new Date(date))}</time>{" "}
+              &bull; <span>{category}</span>
             </p>
             <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
               <a className="block">
