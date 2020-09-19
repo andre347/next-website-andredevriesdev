@@ -18,31 +18,43 @@ function Posts({ allBlogsData }) {
   const [filterBlogs, setFilterBlogs] = React.useState(allBlogsData);
   const [selectedCategory, setselectedCategory] = React.useState("All");
 
+  // search through the blogs
+  const [search, setSearch] = React.useState("");
+  const [categoryBlogs, setCategoryBlogs] = React.useState(allBlogsData);
+
+  function setSearchBlogs(value) {
+    setSearch(value);
+    const searchBlogs = !search
+      ? categoryBlogs
+      : categoryBlogs.filter((blog) =>
+          blog.description.toLowerCase().includes(value)
+        );
+    setFilterBlogs(searchBlogs);
+  }
+
   function setCategory(category) {
     setselectedCategory(category);
     if (category == "All") {
       setFilterBlogs(allBlogsData);
+      setCategoryBlogs(allBlogsData);
     } else {
       const filteredList = allBlogsData.filter(
         (blog) => blog.category === category
       );
       setFilterBlogs(filteredList);
+      setCategoryBlogs(filteredList);
     }
 
     setDropdown(false);
   }
+
+  // use search to filter
 
   // unique list of blog categories
   const blogCategories = [
     "All",
     ...new Set(allBlogsData.map((blog) => blog.category).sort()),
   ];
-
-  const countOfBlogs = () => {
-    console.log(allBlogsData.length.toString());
-    // return allBlogsData.length.toString();
-    return "Search all the blogs";
-  };
 
   return (
     <div className="divide-y-2 divide-orange-100">
@@ -79,6 +91,7 @@ function Posts({ allBlogsData }) {
               <input
                 id="search_blog_mobile"
                 className="form-input block w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:hidden"
+                onChange={(e) => setSearchBlogs(e.target.value)}
                 placeholder={`Search ${filterBlogs.length} ${
                   selectedCategory === "All" ? "" : selectedCategory + " "
                 }${filterBlogs.length > 1 ? "blogs" : "blog"}..`}
@@ -86,6 +99,7 @@ function Posts({ allBlogsData }) {
               <input
                 id="search_blog_desktop"
                 className="hidden form-input w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:block sm:text-sm sm:leading-5"
+                onChange={(e) => setSearchBlogs(e.target.value)}
                 placeholder={`Search ${filterBlogs.length} ${
                   selectedCategory === "All" ? "" : selectedCategory + " "
                 }${filterBlogs.length > 1 ? "blogs" : "blog"}..`}
