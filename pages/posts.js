@@ -28,11 +28,11 @@ function Posts({ allBlogsData }) {
   const [categoryBlogs, setCategoryBlogs] = React.useState(allBlogsData);
 
   function setSearchBlogs(value) {
-    setSearch(value);
+    setSearch(value.toLowerCase());
     const searchBlogs = !search
       ? categoryBlogs
       : categoryBlogs.filter((blog) =>
-          blog.description.toLowerCase().includes(value)
+          blog.description.toLowerCase().includes(value.lowerCase())
         );
     setFilterBlogs(searchBlogs);
   }
