@@ -32,7 +32,7 @@ function Posts({ allBlogsData }) {
     const searchBlogs = !search
       ? categoryBlogs
       : categoryBlogs.filter((blog) =>
-          blog.description.toLowerCase().includes(value.lowerCase())
+          blog.description.toLowerCase().includes(value.toLowerCase())
         );
     setFilterBlogs(searchBlogs);
   }
