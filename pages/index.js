@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 // get all the blogs
 import { getSortedBlogsData } from "../lib/blogs";
@@ -10,9 +11,18 @@ import tinytime from "tinytime";
 // template for date
 const template = tinytime("{MMMM} {DD}, {YYYY}");
 
+const twitterImage =
+  "https://res.cloudinary.com/dmim37dbf/image/upload/v1600869014/YouTubeBanner/YouTube_Banner.png";
+
 const Home = ({ allBlogsData }) => {
   return (
     <Layout>
+      <Head>
+        <meta name="twitter:image" content={twitterImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@andre347_" />
+        <meta name="twitter:title" content={"Andre de Vries"} />
+      </Head>
       <Introduction />
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
