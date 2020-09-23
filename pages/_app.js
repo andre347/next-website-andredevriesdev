@@ -54,7 +54,9 @@ function App({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-90804640-2');
+            gtag('config', 'UA-90804640-2', {
+              page_path: window.location.pathname
+            });
         `,
           }}
         />
