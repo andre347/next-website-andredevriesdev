@@ -18,7 +18,7 @@ const Home = ({ allBlogsData }) => {
         {allBlogsData.map(({ title, id, description, date, category }) => (
           <li key={id} className="py-9">
             <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-2 xl:items-baseline">
-              <dl>
+              <dl className="col-span-4">
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base leading-6 font-medium text-gray-500">
                   <time dateTime={date}>{template.render(new Date(date))}</time>{" "}
