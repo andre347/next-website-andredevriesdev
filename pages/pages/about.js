@@ -74,7 +74,7 @@ function about() {
             <li>Tableau Certified Trainer</li>
             <li>Tableau Desktop Certified</li>
             <li>Tableau Server Associate</li>
-            <li>AWS Cloud Practioner</li>
+            <li>AWS Cloud Practitioner</li>
             <li>AWS Certified Developer - Associate</li>
           </ul>
         </div>
