@@ -18,8 +18,19 @@ export default function Blog({ content, frontmatter }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@andre347_" />
         <meta name="twitter:title" content={frontmatter.title} />
-        {/* <meta name="twitter:description" content={frontmatter.description} /> */}
         <meta name="twitter:image" content={frontmatter.socialImage} />
+        {/* Open Graph */}
+        <meta
+          property="og:image"
+          content={frontmatter.socialImage}
+          key="ogimage"
+        />
+        <meta
+          property="og:site_name"
+          content={frontmatter.title}
+          key="ogsitename"
+        />
+        <meta property="og:title" content={frontmatter.title} key="ogtitle" />
       </Head>
       {/* <div className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-orange-200">
         I can put more content here! And I need to remove the title from the

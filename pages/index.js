@@ -22,6 +22,7 @@ const Home = ({ allBlogsData }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@andre347_" />
         <meta name="twitter:title" content={"Andre de Vries"} />
+        <meta property="og:image" content={twitterImage} key="ogimage" />
       </Head>
       <Introduction />
       <ul className="">
