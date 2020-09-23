@@ -7,7 +7,6 @@ import ReactMarkdown from "react-markdown/with-html";
 import matter from "gray-matter";
 
 export default function Blog({ content, frontmatter }) {
-  console.log(frontmatter);
   return (
     <div
       className="divide-y xl:divide-y-0 divide-orange-200 xl:grid xl:grid-cols-4 xl:col-gap-6 pb-16 xl:pb-20"
