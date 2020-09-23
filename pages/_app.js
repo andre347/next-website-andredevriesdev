@@ -1,3 +1,5 @@
+import React, { Fragment } from "react";
+
 import "../css/tailwind.css";
 import Head from "next/head";
 
@@ -44,22 +46,6 @@ function App({ Component, pageProps }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-90804640-2"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-90804640-2', {
-              page_path: window.location.pathname
-            });
-        `,
-          }}
-        />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
         <meta content={meta.description} name="description" />
@@ -74,7 +60,9 @@ function App({ Component, pageProps }) {
         <Header />
       </Section>
       <Section>
-        <Component {...pageProps} />
+        <Fragment>
+          <Component {...pageProps} />
+        </Fragment>
       </Section>
       <Section>
         <Footer />
