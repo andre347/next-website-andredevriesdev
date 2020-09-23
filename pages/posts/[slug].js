@@ -28,7 +28,11 @@ export default function Blog({ content, frontmatter }) {
       </div> */}
       <div className="divide-y divide-orange-200 xl:pb-0 xl:col-span-4 xl:row-span-2">
         <div className="prose max-w-none pt-10 pb-8">
-          <ReactMarkdown escapeHtml={false} source={content} />
+          <ReactMarkdown
+            escapeHtml={false}
+            source={content}
+            linkTarget={"_target='blank'"}
+          />
         </div>
       </div>
     </div>

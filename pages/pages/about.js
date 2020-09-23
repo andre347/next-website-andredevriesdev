@@ -3,7 +3,7 @@ import React from "react";
 function about() {
   return (
     <div className="relative py-8 bg-white overflow-hidden">
-      <div className="relative px-4 sm:px-6 lg:px-8">
+      <div className="relative">
         <div className="text-lg max-w-prose mx-auto mb-6">
           <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             Hello!
@@ -11,8 +11,14 @@ function about() {
           <p className="text-xl text-gray-500 leading-8">
             Hi! I am Andre 👋 and I am a Solutions Engineer. I currently work
             for{" "}
-            <a href="https://theinformationlab.co.uk">The Information Lab</a> in
-            London. My main role there is to help people see and understand
+            <a
+              href="https://theinformationlab.co.uk"
+              target="_blank"
+              rel="noopener"
+            >
+              The Information Lab
+            </a>{" "}
+            in London. My main role there is to help people see and understand
             their data by using these two industry leading data analytics tools.
           </p>
         </div>
@@ -24,6 +30,8 @@ function about() {
             <a
               className="text-orange-400"
               href="http://www.thedataschool.co.uk"
+              target="_blank"
+              rel="noopener"
             >
               Dataschool
             </a>{" "}
@@ -44,7 +52,14 @@ function about() {
             on in my career I focused on Python but in the last few years I
             primarily write JavaScript. If you want to get a sense of what I
             create, then head over to my{" "}
-            <a href="https://www.github.com/andre347">Github</a> page.
+            <a
+              href="https://www.github.com/andre347"
+              target="_blank"
+              rel="noopener"
+            >
+              Github
+            </a>{" "}
+            page.
           </p>
           <h3>Teaching</h3>
           <p>
