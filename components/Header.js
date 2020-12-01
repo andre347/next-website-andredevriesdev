@@ -29,7 +29,17 @@ function Header() {
             className="font-medium text-gray-500 hover:text-gray-700"
           >
             {" "}
-            About
+            About{" "}
+          </a>
+        </Link>
+        <span className="font-medium text-gray-500">|</span>
+        <Link href="/pages/github">
+          <a
+            aria-label="andredevries.dev/github"
+            className="font-medium text-gray-500 hover:text-gray-700"
+          >
+            {" "}
+            Github
           </a>
         </Link>
       </div>

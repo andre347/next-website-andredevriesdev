@@ -84,7 +84,6 @@ const Home = ({ allBlogsData }) => {
 export async function getStaticProps() {
   // Get external data from the file system, API, DB, etc.
   const allBlogsData = getSortedBlogsData().slice(0, 3);
-  console.log(typeof allBlogsData);
 
   // The value of the `props` key will be
   //  passed to the `Home` component
