@@ -2,6 +2,8 @@
 
 export default async (req, res) => {
   const data = await fetchdataFromGithub();
+  // set the cache control to max cache for 60 seconds
+  res.setHeader("Cache-Control", "s-maxage=300, stale-while-revalidate");
   res.statusCode = 200;
   //   return only the 5 most recently updated repos
   res.json(data.slice(0, 5));
