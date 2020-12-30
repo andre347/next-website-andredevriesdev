@@ -7,6 +7,7 @@ import { getSortedBlogsData } from "../lib/blogs";
 import Layout from "../components/Layout";
 import Introduction from "../components/Introduction";
 import tinytime from "tinytime";
+import NavTabs from "../components/NavTabs";
 
 // template for date
 const template = tinytime("{MMMM} {DD}, {YYYY}");
@@ -25,6 +26,7 @@ const Home = ({ allBlogsData }) => {
         <meta property="og:image" content={twitterImage} key="ogimage" />
       </Head>
       <Introduction />
+      <NavTabs />
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
           <li key={id} className="py-9">

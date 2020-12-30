@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const meta = {
   description:
@@ -7,13 +8,15 @@ const meta = {
 
 function Introduction() {
   return (
-    <div className="flex flex-col pt-6 pb-8 items-center space-y-8 sm:items-start sm:space-y-0 sm:flex-row sm:space-x-8">
+    <div className="flex flex-col pt-6 pb-8 items-center space-y-8 sm:items-start sm:space-y-0 sm:flex-row sm:space-x-8 border-b-2 border-orange-100 ">
       <a className="flex-shrink-0" href="/">
         <span className="sr-only">Home</span>
-        <img
+        <Image
           className="h-28 w-28 sm:h-36 sm:w-36 rounded-lg object-cover"
           src="https://res.cloudinary.com/dmim37dbf/image/upload/v1548761374/image_andre.png"
           alt="andre image"
+          height={145}
+          width={145}
         />
       </a>
       <div className="text-center sm:text-left">
@@ -21,11 +24,11 @@ function Introduction() {
           Hi! I'm Andre
         </h1>
         <div className="mt-2">
-          <p className="text-lg leading-7 tracking-tight text-gray-500">
+          <p className="text-lg leading-7 tracking-tight font-medium text-gray-500">
             {meta.description}
           </p>
         </div>
-        <div className="mt-4 flex justify-center space-x-2 text-gray-400 sm:justify-start">
+        <div className="mt-4 flex justify-center space-x-2 text-gray-400 font-medium sm:justify-start">
           <a
             className="text-gray-500 hover:text-gray-900"
             href="https://twitter.com/andre347_"

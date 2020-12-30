@@ -17,7 +17,8 @@ export function Layout({ children, pageMeta }) {
     ],
     ...pageMeta,
   };
-  return <div className="divide-y-2 divide-orange-100">{children}</div>;
+  // divide-y-2 divide-orange-100
+  return <div className="">{children}</div>;
 }
 
 export default Layout;

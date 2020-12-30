@@ -6,7 +6,29 @@ import path from "path";
 import ReactMarkdown from "react-markdown/with-html";
 import matter from "gray-matter";
 
+// import Image from nextjs and then use the renderer to import the image in the react markdown
+// https://jacobwicks.github.io/2020/06/19/rendering-markdown-and-resizing-images-with-react-markdown.html
+import Image from "next/image";
+
 export default function Blog({ content, frontmatter }) {
+  const renderers = {
+    image: ({ alt, src, title }) => (
+      <div
+        className="hello"
+        style={{ position: "relative", width: "auto", height: "500px" }}
+      >
+        <Image
+          alt={alt}
+          src={src}
+          title={title}
+          layout="fill"
+          objectFit="none"
+          quality={100}
+        />
+      </div>
+    ),
+  };
+
   return (
     <div
       className="divide-y xl:divide-y-0 divide-orange-200 xl:grid xl:grid-cols-4 xl:col-gap-6 pb-16 xl:pb-20"
@@ -42,6 +64,7 @@ export default function Blog({ content, frontmatter }) {
             escapeHtml={false}
             source={content}
             linkTarget={"_target='blank'"}
+            renderers={renderers}
           />
         </div>
       </div>
