@@ -51,7 +51,7 @@ function Header() {
             Menu open: "hidden", Menu closed: "block"
           --> */}
             <svg
-              class={`${isOpen ? "block" : "hidden"} h-6 w-6`}
+              class={`${isOpen ? "hidden" : "block"} h-6 w-6`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ function Header() {
             Menu open: "block", Menu closed: "hidden"
           --> */}
             <svg
-              class={`${isOpen ? "hidden" : "block"} h-6 w-6`}
+              class={`${isOpen ? "block" : "hidden"} h-6 w-6`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -96,7 +96,7 @@ function Header() {
 
 function MobileHeader({ isOpen }) {
   return (
-    <div class={`${isOpen ? "hidden" : "block"} sm:hidden`}>
+    <div class={`${isOpen ? "block" : "hidden"} sm:hidden`}>
       <div class="px-2 pt-2 pb-3 space-y-1">
         {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
         <a
