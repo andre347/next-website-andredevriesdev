@@ -8,16 +8,12 @@ function NavTabs() {
         <div className="">
           <nav className="flex">
             <NavLink href="/">
-              <a
-                href="#"
-                className="px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 focus:bg-gray-100"
-              >
+              <a className="px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 focus:bg-gray-100">
                 Writings
               </a>
             </NavLink>
             <NavLink href="/pages/github">
               <a
-                href="#"
                 className="ml-4 px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-700 bg-gray-100 focus:outline-none focus:bg-gray-200"
                 aria-current="page"
               >
@@ -26,7 +22,6 @@ function NavTabs() {
             </NavLink>
             <NavLink href="/pages/youtube">
               <a
-                href="#"
                 className="px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 focus:bg-gray-100"
                 aria-current="page"
               >

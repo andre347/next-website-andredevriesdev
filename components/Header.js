@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileNavLink from "../lib/MobileNavLink";
 
 function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -6,7 +7,7 @@ function Header() {
   return (
     <nav>
       <header className="flex justify-between items-center py-10">
-        <div>
+        <div onClick={() => setIsOpen(false)}>
           <Link href="/">
             <a
               aria-label="andredevries.dev"
@@ -39,19 +40,13 @@ function Header() {
         </div>
         <div className="block sm:hidden">
           <button
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-expanded="false"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <span class="sr-only">Open main menu</span>
-            {/* <!-- Icon when menu is closed. -->
-          <!--
-            Heroicon name: menu
-
-            Menu open: "hidden", Menu closed: "block"
-          --> */}
+            <span className="sr-only">Open main menu</span>
             <svg
-              class={`${isOpen ? "hidden" : "block"} h-6 w-6`}
+              className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -59,20 +54,14 @@ function Header() {
               aria-hidden="true"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-            {/* <!-- Icon when menu is open. -->
-          <!--
-            Heroicon name: x
-
-            Menu open: "block", Menu closed: "hidden"
-          --> */}
             <svg
-              class={`${isOpen ? "block" : "hidden"} h-6 w-6`}
+              className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -80,9 +69,9 @@ function Header() {
               aria-hidden="true"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
@@ -96,33 +85,21 @@ function Header() {
 
 function MobileHeader({ isOpen }) {
   return (
-    <div class={`${isOpen ? "block" : "hidden"} sm:hidden`}>
-      <div class="px-2 pt-2 pb-3 space-y-1">
+    <div className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
+      <div className="px-2 pt-2 pb-3 space-y-1">
         {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-        <a
-          href="#"
-          class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-        >
-          Dashboard
-        </a>
-        <a
-          href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-        >
-          Team
-        </a>
-        <a
-          href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-        >
-          Projects
-        </a>
-        <a
-          href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-        >
-          Calendar
-        </a>
+        <MobileNavLink href="/posts">
+          <a href="#">Blogs</a>
+        </MobileNavLink>
+        <MobileNavLink href="/pages/github">
+          <a href="#">Github</a>
+        </MobileNavLink>
+        <MobileNavLink href="/pages/youtube">
+          <a href="#">YouTube</a>
+        </MobileNavLink>
+        <MobileNavLink href="/pages/about">
+          <a href="#">About</a>
+        </MobileNavLink>
       </div>
     </div>
   );
