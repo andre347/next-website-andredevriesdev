@@ -8,9 +8,15 @@ import Layout from "../components/Layout";
 import Introduction from "../components/Introduction";
 import tinytime from "tinytime";
 import NavTabs from "../components/NavTabs";
+import SectionHeader from "../components/SectionHeader";
 
 // template for date
 const template = tinytime("{MMMM} {DD}, {YYYY}");
+
+// section title and description
+const blogTitle = "Most Recent";
+const blogDescription =
+  "My thoughts and writings related to development, data analytics, and working in the cloud";
 
 const twitterImage =
   "https://res.cloudinary.com/dmim37dbf/image/upload/v1600869014/YouTubeBanner/YouTube_Banner.png";
@@ -27,6 +33,10 @@ const Home = ({ allBlogsData }) => {
       </Head>
       <Introduction />
       <NavTabs />
+      <SectionHeader
+        sectionTitle={blogTitle}
+        sectionDescription={blogDescription}
+      />
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
           <li key={id} className="py-9">
