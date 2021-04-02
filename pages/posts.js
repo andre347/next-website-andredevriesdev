@@ -95,7 +95,8 @@ function Posts({ allBlogsData }) {
               </div>
               <input
                 id="search_blog_mobile"
-                className="form-input block w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:hidden"
+                type="text"
+                className="form-input border-gray-300 block w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:hidden"
                 onChange={(e) => setSearchBlogs(e.target.value)}
                 placeholder={`Search ${filterBlogs.length} ${
                   selectedCategory === "All" ? "" : selectedCategory + " "
@@ -103,7 +104,8 @@ function Posts({ allBlogsData }) {
               />
               <input
                 id="search_blog_desktop"
-                className="hidden form-input w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:block sm:text-sm sm:leading-5"
+                type="text"
+                className="hidden border-gray-300 form-input w-full rounded-none rounded-l-md pl-10 transition ease-in-out duration-150 sm:block sm:text-sm sm:leading-5"
                 onChange={(e) => setSearchBlogs(e.target.value)}
                 placeholder={`Search ${filterBlogs.length} ${
                   selectedCategory === "All" ? "" : selectedCategory + " "
