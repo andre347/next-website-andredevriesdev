@@ -1,10 +1,10 @@
 import React from "react";
 
-function about() {
+function About() {
   return (
     <div className="relative py-8 bg-white overflow-hidden">
       <div className="relative">
-        <div className="text-lg max-w-prose mx-auto mb-6">
+        <div className="text-lg max-w-5xl mx-auto mb-6">
           <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             Hello!
           </h1>
@@ -19,10 +19,10 @@ function about() {
               The Information Lab
             </a>{" "}
             in London. My main role there is to help people see and understand
-            their data by using these two industry leading data analytics tools.
+            their data by using industry leading data analytics tools.
           </p>
         </div>
-        <div className="prose prose-lg text-gray-500 mx-auto">
+        <div className="max-w-7xl prose prose-lg text-gray-500 mx-auto">
           <p>
             In the last few years I've been focusing more and more on building
             and delivering educational content around data & data visualisation.
@@ -76,6 +76,7 @@ function about() {
             <li>Tableau Server Associate</li>
             <li>AWS Cloud Practitioner</li>
             <li>AWS Certified Developer - Associate</li>
+            <li>AWS Certified Data Analytics - Specialty</li>
           </ul>
         </div>
       </div>
@@ -83,4 +84,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;

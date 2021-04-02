@@ -1,8 +1,10 @@
 import Link from "next/link";
 import MobileNavLink from "../lib/MobileNavLink";
+import { useState } from "react";
+import NavTabs from "./NavTabs";
 
 function Header() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
   return (
     <nav>
@@ -19,7 +21,8 @@ function Header() {
         </div>
         {/* Header for non-mobile screens */}
         <div className="text-base leading-5 hidden sm:block">
-          <Link href="/posts">
+          <NavTabs />
+          {/* <Link href="/posts">
             <a
               aria-label="andredevries.dev/posts"
               className="font-medium text-gray-500 hover:text-gray-700"
@@ -36,7 +39,7 @@ function Header() {
               {" "}
               About{" "}
             </a>
-          </Link>
+          </Link> */}
         </div>
         <div className="block sm:hidden">
           <button

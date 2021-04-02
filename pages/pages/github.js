@@ -1,25 +1,23 @@
 import React from "react";
 import useSWR from "swr";
 import GitHubCard from "../../components/GitHubCard";
-import NavTabs from "../../components/NavTabs";
 import ProfileHeaderPage from "../../components/ProfileHeaderPage";
 import SectionHeader from "../../components/SectionHeader";
 import Skeleton from "../../components/Skeleton";
 
 const githubTitle = "Most Popular";
 const githubDescription =
-  "Explore my most popular work projects, hobby projects and code snippets that I share on Github.";
+  "Explore my most popular work projects, hobby projects and code snippets that I share on Github";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
 function GithubLayout({ children }) {
   return (
     <ProfileHeaderPage>
-      <NavTabs />
-      <SectionHeader
+      {/* <SectionHeader
         sectionTitle={githubTitle}
         sectionDescription={githubDescription}
-      />
+      /> */}
       {children}
     </ProfileHeaderPage>
   );
@@ -38,11 +36,13 @@ function Github() {
     return (
       <GithubLayout>
         {/* This is the skeleton loader */}
-        <Skeleton />
-        <Skeleton />
-        <Skeleton />
-        <Skeleton />
-        <Skeleton />
+        <ul className="flex flex-col space-y-4 py-9">
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+        </ul>
       </GithubLayout>
     );
   }

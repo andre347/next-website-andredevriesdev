@@ -11,10 +11,6 @@ tags:
   - vuejs
 ---
 
-[Source](https://medium.com/@andre.devries/embedding-tableau-the-vuejs-way-653c629724a "Permalink to Embedding Tableau the VueJS Way! – Andre de Vries – Medium")
-
-# Embedding Tableau the VueJS Way! – Andre de Vries – Medium
-
 ![][2]
 
 [VueJS][3] is a Progressive JavaScript Framework that makes creating single page applications a whole lot easier than using traditional methods. In this blogpost I'll explain how to use this framework when you want to start embedding Tableau dashboards.

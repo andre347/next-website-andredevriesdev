@@ -32,11 +32,10 @@ const Home = ({ allBlogsData }) => {
         <meta property="og:image" content={twitterImage} key="ogimage" />
       </Head>
       <Introduction />
-      <NavTabs />
-      <SectionHeader
+      {/* <SectionHeader
         sectionTitle={blogTitle}
         sectionDescription={blogDescription}
-      />
+      /> */}
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
           <li key={id} className="py-9">

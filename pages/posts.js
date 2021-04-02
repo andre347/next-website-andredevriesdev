@@ -71,7 +71,7 @@ function Posts({ allBlogsData }) {
           All Blogs
         </h1>
         <p className="text-lg leading-7 text-gray-500">
-          My writings about data, analytics, web development & the cloud.
+          My writings about data analytics, web development & the cloud.
         </p>
         {/* Search box */}
         <div>

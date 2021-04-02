@@ -15,7 +15,7 @@ function GitHubCard(props) {
   } = meta;
   console.log(meta);
   return (
-    <div className="mt-2 flex items-center rounded-md text-gray-800 border border-gray-200 sm:rounded-lg hover:shadow-sm hover:border-gray-300 hover:text-gray-900 ease-in-out duration-150 ">
+    <div className="mt-2 flex items-center cursor-pointer rounded-md text-gray-800 border border-gray-200 sm:rounded-lg hover:shadow-sm hover:border-gray-300 hover:text-gray-900 ease-in-out duration-150 ">
       <div className="px-4 py-5 sm:p-6 w-full">
         <div className="flex flex-row justify-between w-full">
           <div>

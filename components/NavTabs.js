@@ -1,37 +1,31 @@
 import React from "react";
 import NavLink from "../lib/NavLink";
 
+const navItems = [
+  { url: "/", id: "Home" },
+  { url: "/pages/about", id: "About" },
+  { url: "/posts", id: "Blogs" },
+  { url: "/pages/github", id: "Github" },
+  { url: "/pages/youtube", id: "YouTube" },
+];
+
 function NavTabs() {
   return (
-    <div className="py-4 mt-2">
-      <div className="hidden sm:block">
-        <div className="">
-          <nav className="flex">
-            <NavLink href="/">
-              <a className="px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 focus:bg-gray-100">
-                Writings
-              </a>
-            </NavLink>
-            <NavLink href="/pages/github">
-              <a
-                className="ml-4 px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-700 bg-gray-100 focus:outline-none focus:bg-gray-200"
-                aria-current="page"
-              >
-                Code
-              </a>
-            </NavLink>
-            <NavLink href="/pages/youtube">
-              <a
-                className="px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 focus:bg-gray-100"
-                aria-current="page"
-              >
-                Videos
-              </a>
-            </NavLink>
-          </nav>
-        </div>
+    // <div className="py-4 mt-2">
+    <div className="hidden sm:block">
+      <div className="">
+        <nav className="flex">
+          {navItems.map((item, idx) => {
+            return (
+              <NavLink href={item.url} key={idx}>
+                <a>{item.id}</a>
+              </NavLink>
+            );
+          })}
+        </nav>
       </div>
     </div>
+    // </div>
   );
 }
 
