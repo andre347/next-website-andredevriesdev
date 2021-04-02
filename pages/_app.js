@@ -39,7 +39,7 @@ function App({ Component, pageProps }) {
     };
   }, [router.events]);
   return (
-    <div className="antialiased">
+    <div className="antialiased bg-white">
       <Head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link

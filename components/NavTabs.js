@@ -14,11 +14,11 @@ function NavTabs() {
     // <div className="py-4 mt-2">
     <div className="hidden sm:block">
       <div className="">
-        <nav className="flex">
+        <nav className="flex" aria-label="Tabs">
           {navItems.map((item, idx) => {
             return (
               <NavLink href={item.url} key={idx}>
-                <a>{item.id}</a>
+                <a aria-current="page">{item.id}</a>
               </NavLink>
             );
           })}

@@ -5,7 +5,6 @@ import NavTabs from "./NavTabs";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  console.log("This one?", isOpen);
   return (
     <nav>
       <header className="flex justify-between items-center py-10">
@@ -108,4 +107,4 @@ function MobileHeader({ isOpen }) {
   );
 }
 
-export default React.memo(Header);
+export default Header;
