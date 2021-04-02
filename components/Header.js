@@ -1,11 +1,11 @@
 import Link from "next/link";
 import MobileNavLink from "../lib/MobileNavLink";
-import { useState } from "react";
+import React, { useState } from "react";
 import NavTabs from "./NavTabs";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+  console.log("This one?", isOpen);
   return (
     <nav>
       <header className="flex justify-between items-center py-10">
@@ -108,4 +108,4 @@ function MobileHeader({ isOpen }) {
   );
 }
 
-export default Header;
+export default React.memo(Header);

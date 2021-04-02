@@ -13,7 +13,6 @@ function GitHubCard(props) {
     created_at,
     updated_at,
   } = meta;
-  console.log(meta);
   return (
     <div className="mt-2 flex items-center cursor-pointer rounded-md text-gray-800 border border-gray-200 sm:rounded-lg hover:shadow-sm hover:border-gray-300 hover:text-gray-900 ease-in-out duration-150 ">
       <div className="px-4 py-5 sm:p-6 w-full">

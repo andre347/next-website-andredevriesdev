@@ -11,7 +11,6 @@ const fetcher = (url) => fetch(url).then((r) => r.json());
 
 function YouTube() {
   const { data: youtubeState, error } = useSWR("/api/youtube", fetcher);
-  console.log(youtubeState);
   return (
     <ProfileHeaderPage>
       {/* <SectionHeader

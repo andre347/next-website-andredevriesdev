@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const meta = {
   description:
-    "I'm a Solutions Engineer who predominantly works with Tableau, Alteryx and AWS. I like to write & teach about data analytics, web development & the cloud.",
+    "I'm a Solutions Engineer who predominantly works with analytics tools such as Tableau & Alteryx. I'm an AWS Certified Developer and a Tableau DataDev Ambassador. I like to write & teach about data analytics, web development & the cloud.",
 };
 
 function Introduction() {
