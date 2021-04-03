@@ -10,7 +10,10 @@ const githubTitle = "Most Popular Repos";
 function GithubLayout({ children }) {
   return (
     <ProfileHeaderPage>
-      <h3 className="mt-8 text-xl leading-7 font-semibold text-gray-900">
+      <h3
+        id="main"
+        className="mt-8 text-xl leading-7 font-semibold text-gray-900"
+      >
         {githubTitle}
       </h3>
       {children}

@@ -21,24 +21,6 @@ function Header() {
         {/* Header for non-mobile screens */}
         <div className="text-base leading-5 hidden sm:block">
           <NavTabs />
-          {/* <Link href="/posts">
-            <a
-              aria-label="andredevries.dev/posts"
-              className="font-medium text-gray-500 hover:text-gray-700"
-            >
-              Blogs{" "}
-            </a>
-          </Link>
-          <span className="font-medium text-gray-500">|</span>
-          <Link href="/pages/about">
-            <a
-              aria-label="andredevries.dev/about"
-              className="font-medium text-gray-500 hover:text-gray-700"
-            >
-              {" "}
-              About{" "}
-            </a>
-          </Link> */}
         </div>
         <div className="block sm:hidden">
           <button
@@ -80,27 +62,27 @@ function Header() {
           </button>
         </div>
       </header>
-      <MobileHeader isOpen={isOpen} />
+      <MobileHeader isOpen={isOpen} setIsOpen={setIsOpen} />
     </nav>
   );
 }
 
-function MobileHeader({ isOpen }) {
+function MobileHeader({ isOpen, setIsOpen }) {
   return (
     <div className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
       <div className="px-2 pt-2 pb-3 space-y-1">
         {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
         <MobileNavLink href="/posts">
-          <a href="#">Blogs</a>
+          <a onClick={() => setIsOpen(!isOpen)}>Blogs</a>
         </MobileNavLink>
-        <MobileNavLink href="/pages/github">
-          <a href="#">Github</a>
+        <MobileNavLink href="/pages/github#main">
+          <a onClick={() => setIsOpen(!isOpen)}>Github</a>
         </MobileNavLink>
-        <MobileNavLink href="/pages/youtube">
-          <a href="#">YouTube</a>
+        <MobileNavLink href="/pages/youtube#main">
+          <a onClick={() => setIsOpen(!isOpen)}>YouTube</a>
         </MobileNavLink>
         <MobileNavLink href="/pages/about">
-          <a href="#">About</a>
+          <a onClick={() => setIsOpen(!isOpen)}>About</a>
         </MobileNavLink>
       </div>
     </div>

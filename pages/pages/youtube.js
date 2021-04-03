@@ -9,7 +9,10 @@ function YouTube() {
   const { data: youtubeState, error } = useSWR("/api/youtube", fetcher);
   return (
     <ProfileHeaderPage>
-      <h3 className="mt-8 text-xl leading-7 font-semibold text-gray-900">
+      <h3
+        id="main"
+        className="mt-8 text-xl leading-7 font-semibold text-gray-900"
+      >
         {youtubeTitle}
       </h3>
       <main className="pt-4 pb-9">
