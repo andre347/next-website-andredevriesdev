@@ -34,7 +34,7 @@ export default function Blog({ content, frontmatter }) {
 
   return (
     <div
-      className="divide-y xl:divide-y-0 divide-orange-200 xl:grid xl:grid-cols-4 xl:col-gap-6 pb-16 xl:pb-20"
+      className="divide-y divide-orange-200 xl:grid xl:grid-cols-4 xl:col-gap-6 pb-16 xl:pb-20"
       style={{ gridTemplateRows: "auto 1fr" }}
     >
       <Head>
@@ -57,7 +57,7 @@ export default function Blog({ content, frontmatter }) {
         />
         <meta property="og:title" content={frontmatter.title} key="ogtitle" />
       </Head>
-      <div className="hidden sm:block py-4 sm:pt-11 xl:pt-11 xl:border-b xl:border-orange-200 w-96">
+      <div className="hidden sm:block py-4 sm:pt-11 xl:pt-11  w-96">
         {
           <dl className="col-span-4">
             <dt className="sr-only">Published on</dt>
