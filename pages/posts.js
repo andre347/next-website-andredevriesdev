@@ -1,18 +1,15 @@
 import React from "react";
 import Link from "next/link";
-
 import Head from "next/head";
 
-import { useOnClickOutside } from "../lib/useOnClickOutside";
-
-import tinytime from "tinytime";
-
 // template for date
+import tinytime from "tinytime";
 const template = tinytime("{MMMM} {DD}, {YYYY}");
 
 // get all the blogs
-import { getSortedBlogsData } from "../lib/blogs";
-import Dropdown from "../components/Dropdown";
+import { getSortedBlogsData } from "@/lib/blogs";
+import Dropdown from "@/components/Dropdown";
+import { useOnClickOutside } from "@/hooks/useOnClickOutside";
 
 function Posts({ allBlogsData }) {
   const [dropdown, setDropdown] = React.useState(false);
@@ -73,7 +70,6 @@ function Posts({ allBlogsData }) {
         <p className="text-lg leading-7 text-gray-500">
           My writings about data analytics, web development & the cloud.
         </p>
-        {/* Search box */}
         <div>
           <label htmlFor="search_blog" className="sr-only">
             Search
@@ -124,7 +120,6 @@ function Posts({ allBlogsData }) {
                     aria-expanded="true"
                   >
                     {selectedCategory}
-                    {/* <!-- Heroicon name: chevron-down --> */}
                     <svg
                       className="-mr-1 ml-2 h-5 w-5"
                       viewBox="0 0 20 20"
@@ -179,8 +174,6 @@ function Posts({ allBlogsData }) {
             </div>
           </div>
         ))}
-
-        {/* This is one blog */}
       </div>
     </div>
   );

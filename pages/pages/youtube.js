@@ -1,23 +1,18 @@
 import React from "react";
 import useSWR from "swr";
-import ProfileHeaderPage from "../../components/ProfileHeaderPage";
-import SectionHeader from "../../components/SectionHeader";
+import ProfileHeaderPage from "@/components/ProfileHeaderPage";
+import { fetcher } from "@/lib/helper";
 
-const youtubeTitle = "Most Recent";
-const youtubeDescription =
-  "Prefer video based learning? Check out my latest videos from my YouTube Channel";
-
-const fetcher = (url) => fetch(url).then((r) => r.json());
+const youtubeTitle = "Channel Stats";
 
 function YouTube() {
   const { data: youtubeState, error } = useSWR("/api/youtube", fetcher);
   return (
     <ProfileHeaderPage>
-      {/* <SectionHeader
-        sectionTitle={youtubeTitle}
-        sectionDescription={youtubeDescription}
-      /> */}
-      <main className="py-9">
+      <h3 className="mt-8 text-xl leading-7 font-semibold text-gray-900">
+        {youtubeTitle}
+      </h3>
+      <main className="pt-4 pb-9">
         <div className="flex flex-col w-full">
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
             {youtubeState && !error && (

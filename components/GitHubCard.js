@@ -23,14 +23,17 @@ function GitHubCard(props) {
                 {language}
               </span>
             </p>
-            <h3 className="text-lg leading-6 font-medium mt-2">
+            {/* on mobile don't concat username, otherwise didnt align nicely */}
+            <h3 className="sm:hidden block text-lg leading-6 font-medium mt-2">
+              {name}
+            </h3>
+            <h3 className="sm:block hidden text-lg leading-6 font-medium mt-2">
               andre347/{name}
             </h3>
           </div>
           <div className="flex align-middle content-center">
             <div className="flex items-center">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 className="h-4 w-4 text-gray-500 flex-shrink-0"
                 viewBox="0 0 24 24"
@@ -48,9 +51,8 @@ function GitHubCard(props) {
                 &bull;
               </span>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width={24}
+                height={24}
                 className="h-4 w-4 text-gray-500 flex-shrink-0"
                 viewBox="0 0 24 24"
               >
@@ -62,7 +64,7 @@ function GitHubCard(props) {
           </div>
         </div>
 
-        <div className="mt-2 max-w-xl text-sm leading-5 text-gray-500 prose">
+        <div className="mt-2 max-w-xl text-sm leading-5 text-gray-500 prose overflow-clip">
           <p>{description}</p>
         </div>
         <div className="mt-3 text-sm leading-5">

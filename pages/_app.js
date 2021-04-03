@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import * as gtag from "../lib/gtag";
+import * as gtag from "@/lib/gtag";
 
 import "../css/tailwind.css";
 import Head from "next/head";
 
 // bring in components
-import Header from "../components/Header";
-import Section from "../components/Section";
-import Footer from "../components/Footer";
+import Header from "@/components/Header";
+import Section from "@/components/Section";
+import Footer from "@/components/Footer";
 
 const meta = {
   title: "Andre de Vries",
@@ -22,9 +22,10 @@ const meta = {
     "blog",
     "data analytics",
     "data visualization",
+    "serverless",
   ],
   description:
-    "My writings about data, analytics, web development & the cloud.",
+    "Solutions Engineer specialising in data analytics, web development & the cloud.",
 };
 
 function App({ Component, pageProps }) {

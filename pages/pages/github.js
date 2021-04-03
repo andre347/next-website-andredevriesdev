@@ -1,23 +1,18 @@
 import React from "react";
 import useSWR from "swr";
-import GitHubCard from "../../components/GitHubCard";
-import ProfileHeaderPage from "../../components/ProfileHeaderPage";
-import SectionHeader from "../../components/SectionHeader";
-import Skeleton from "../../components/Skeleton";
+import GitHubCard from "@/components/GitHubCard";
+import ProfileHeaderPage from "@/components/ProfileHeaderPage";
+import Skeleton from "@/components/Skeleton";
+import { fetcher } from "@/lib/helper";
 
-const githubTitle = "Most Popular";
-const githubDescription =
-  "Explore my most popular work projects, hobby projects and code snippets that I share on Github";
-
-const fetcher = (url) => fetch(url).then((r) => r.json());
+const githubTitle = "Most Popular Repos";
 
 function GithubLayout({ children }) {
   return (
     <ProfileHeaderPage>
-      {/* <SectionHeader
-        sectionTitle={githubTitle}
-        sectionDescription={githubDescription}
-      /> */}
+      <h3 className="mt-8 text-xl leading-7 font-semibold text-gray-900">
+        {githubTitle}
+      </h3>
       {children}
     </ProfileHeaderPage>
   );
@@ -32,7 +27,7 @@ function Github() {
       </GithubLayout>
     );
   }
-  if (!data) {
+  if (!data && !error) {
     return (
       <GithubLayout>
         {/* This is the skeleton loader */}
@@ -48,7 +43,7 @@ function Github() {
   }
   return (
     <GithubLayout>
-      <ul className="flex flex-col space-y-4 py-9">
+      <ul className="flex flex-col space-y-4 pt-4 pb-9">
         {data.map((githubMeta) => {
           return (
             <GitHubCard

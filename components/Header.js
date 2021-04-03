@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MobileNavLink from "../lib/MobileNavLink";
+import MobileNavLink from "@/lib/MobileNavLink";
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
 

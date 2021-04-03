@@ -1,5 +1,5 @@
 import React from "react";
-import NavLink from "../lib/NavLink";
+import NavLink from "@/lib/NavLink";
 
 const navItems = [
   { url: "/", id: "Home" },
