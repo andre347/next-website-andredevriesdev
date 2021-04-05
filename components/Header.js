@@ -6,7 +6,7 @@ import NavTabs from "./NavTabs";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav>
+    <nav className="fixed top-0 z-30 bg-white left-0 right-0 max-w-3xl px-4 sm:px-6 xl:max-w-4xl xl:px-0 mx-auto">
       <header className="flex justify-between items-center py-10">
         <div onClick={() => setIsOpen(false)}>
           <Link href="/">

@@ -75,7 +75,9 @@ function App({ Component, pageProps }) {
       </Section>
       <Section>
         <Fragment>
-          <Component {...pageProps} />
+          <div className="py-28">
+            <Component {...pageProps} />
+          </div>
         </Fragment>
       </Section>
       <Section>
