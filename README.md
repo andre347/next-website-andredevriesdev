@@ -1,6 +1,6 @@
 # My site on the interwebs 💻
 
-Repo for [andredevries.dev](https://andredevries.dev).
+Repo for [andredevries.dev](https://andredevries.dev)
 
 ## Development
 
@@ -14,12 +14,12 @@ Install dependencies:
 `npm i or yarn install`
 
 Start it:
-`yarn dev`
+`npm run dev or yarn dev`
 
 See the page running on:
 `localhost:3000`
 
-# Tech Stack
+## Tech Stack
 
 - Nextjs
 - TailwindCSS
@@ -27,19 +27,19 @@ See the page running on:
 - Vercel
 - Cloudinary
 
-# Inspiration
+## Inspiration
 
 - https://kentcdodds.com/
 - https://leerob.io/
 - https://blog.tailwindcss.com/
 - https://brianlovin.com/
 
-# Useful blog posts that got me started
+## Useful blog posts that got me started
 
 - https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6
 - https://leerob.io/snippets/youtube
 - https://attacomsian.com/blog/nodejs-convert-xml-to-json
 
-# Icons
+## Icons
 
 https://simpleicons.org/
