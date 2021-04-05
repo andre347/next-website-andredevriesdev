@@ -8,5 +8,6 @@
       "@/lib/*": ["lib/*"],
       "@/hooks/*": ["hooks/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
