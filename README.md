@@ -1,26 +1,45 @@
-# Main Website ideas
+# My site on the interwebs 💻
 
-https://kentcdodds.com/
-https://blog.tailwindcss.com/
+Repo for [andredevries.dev](https://andredevries.dev).
 
-Have five blogs listed and then a page with all the blog posts (see 'all blogs')
+## Development
 
-# Logo idea
+Clone the repository:
+`git clone https://github.com/andre347/next-website-andredevriesdev.git`
 
-Similar to Tailwind but with image as the waves
-andredevriesDEV - DEV in orange - or name in orange
-andreDEVries - DEV in orange
+`cd` into the directory:
+`cd next-website-andredevriesdev`
 
-# TailwindUI to React
+Install dependencies:
+`npm i or yarn install`
 
-https://gist.github.com/RobinMalfait/a90e8651196c273dfa51eec0f43e1676
+Start it:
+`yarn dev`
 
-# Get content of post
+See the page running on:
+`localhost:3000`
 
-https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6
+# Tech Stack
 
-# Image optimisation
+- Nextjs
+- TailwindCSS
+- useSWR
+- Vercel
+- Cloudinary
 
-# Icons from
+# Inspiration
+
+- https://kentcdodds.com/
+- https://leerob.io/
+- https://blog.tailwindcss.com/
+- https://brianlovin.com/
+
+# Useful blog posts that got me started
+
+- https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6
+- https://leerob.io/snippets/youtube
+- https://attacomsian.com/blog/nodejs-convert-xml-to-json
+
+# Icons
 
 https://simpleicons.org/
