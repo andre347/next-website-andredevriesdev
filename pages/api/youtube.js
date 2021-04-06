@@ -14,6 +14,7 @@ async function getLatestVideos() {
     return {
       id: video.id[0],
       title: video.title[0],
+      url: video.link[0].href[0],
       published: video.published[0],
       thumbnail: video["media:group"][0]["media:thumbnail"][0]["url"][0],
       description: video["media:group"][0]["media:description"][0],
