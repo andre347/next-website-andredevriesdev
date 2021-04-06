@@ -2,9 +2,11 @@ import React from "react";
 import useSWR from "swr";
 import ProfileHeaderPage from "@/components/ProfileHeaderPage";
 import { fetcher } from "@/lib/helper";
+import VideoSkeleton from "@/components/VideoSkeleton";
 
 const youtubeTitle = "Channel Stats";
 const videoTitle = "Recent Upload View Count";
+const skeletonArray = new Array(3);
 
 function YouTube() {
   const { data: youtubeState, error } = useSWR("/api/youtube", fetcher);
@@ -63,15 +65,16 @@ function YouTube() {
             )}
             {!youtubeState && !error && (
               <>
-                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer animate-pulse">
-                  <h3 className="font-medium h-4 bg-gray-400 w-3/4"></h3>
-                  <p className="mt-2 h-4 text-3xl font-bold spacing-sm bg-gray-400 rounded"></p>
-                </div>
-                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer ">
-                  <h3 className="font-medium h-4 bg-gray-400 w-3/4"></h3>
-                  <p className="mt-2 h-4 text-3xl font-bold spacing-sm bg-gray-400 rounded w-5/6"></p>
-                </div>
+                <VideoSkeleton />
+                <VideoSkeleton />
+                <VideoSkeleton />
               </>
+            )}
+            {!youtubeState && error && (
+              <p>
+                Whoops, there's an error. We probably hit the YouTube API rate
+                limit. Please come back later
+              </p>
             )}
           </div>
         </div>
@@ -105,6 +108,20 @@ function YouTube() {
                   );
                 })}
               </>
+            )}
+            {!youtubeState && !error && (
+              <>
+                <VideoSkeleton />
+                <VideoSkeleton />
+                <VideoSkeleton />
+                <VideoSkeleton />
+              </>
+            )}
+            {!youtubeState && error && (
+              <p>
+                Whoops, there's an error. We probably hit the YouTube API rate
+                limit. Please come back later
+              </p>
             )}
           </div>
         </div>
