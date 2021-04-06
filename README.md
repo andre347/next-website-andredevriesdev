@@ -23,7 +23,7 @@ See the page running on:
 
 - Nextjs
 - TailwindCSS
-- useSWR
+- SWR
 - Vercel
 - Cloudinary
 
@@ -33,6 +33,7 @@ See the page running on:
 - https://leerob.io/
 - https://blog.tailwindcss.com/
 - https://brianlovin.com/
+- https://samselikoff.com
 
 ## Useful blog posts that got me started
 
