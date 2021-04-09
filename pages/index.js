@@ -43,7 +43,7 @@ const Home = ({ allBlogsData }) => {
                       <a className="text-gray-800">{title}</a>
                     </Link>
                   </h2>
-                  <div className="prose max-w-none text-gray-500">
+                  <div className="prose max-w-none text-gray-500 line-clamp-4">
                     {description}
                   </div>
                 </div>

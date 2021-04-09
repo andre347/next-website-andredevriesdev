@@ -97,11 +97,11 @@ function YouTube() {
                       target="__blank"
                       rel="noopener noreferrer"
                     >
-                      <h3 className="font-medium truncate">{video.title}</h3>
+                      <h3 className="font-medium">{video.title}</h3>
                       <p className="mt-2 text-3xl font-bold spacing-sm text-black">
                         {new Intl.NumberFormat().format(video.views)}
                       </p>
-                      <p className="text-sm font-light pt-4 overflow-ellipsis">
+                      <p className="text-sm font-light pt-4 overflow-ellipsis line-clamp-4">
                         {video.description}
                       </p>
                     </a>

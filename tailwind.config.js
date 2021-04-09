@@ -35,5 +35,7 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
+    // line clamp is for wrapping and or breaking the lines
+    require("@tailwindcss/line-clamp"),
   ],
 };
