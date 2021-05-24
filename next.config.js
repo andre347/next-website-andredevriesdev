@@ -8,11 +8,11 @@ module.exports = {
       "theinformationlab.co.uk", // for Information Lab Images
     ],
   },
-  // webpack: (config) => {
-  //   // Fixes npm packages that depend on `fs` module
-  //   config.node = {
-  //     fs: "empty",
-  //   };
-  //   return config;
-  // },
+  webpack: (config, { dev, isServer }) => {
+    // RSS feed
+    if (isServer) {
+      require("./lib/generate-rss");
+    }
+    return config;
+  },
 };

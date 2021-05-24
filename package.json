@@ -27,6 +27,7 @@
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
-    "@tailwindcss/jit": "^0.1.18"
+    "@tailwindcss/jit": "^0.1.18",
+    "rss": "^1.2.2"
   }
 }
