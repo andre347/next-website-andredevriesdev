@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Link from "next/link";
 
 import fs from "fs";
@@ -14,6 +15,7 @@ const template = tinytime("{MMMM} {DD}, {YYYY}");
 import Image from "next/image";
 
 export default function Blog({ content, frontmatter }) {
+  const router = useRouter();
   const renderers = {
     image: ({ alt, src, title }) => (
       <div
@@ -81,16 +83,17 @@ export default function Blog({ content, frontmatter }) {
         </div>
       </div>
       <div className="text-base leading-6 font-medium border-t-2 border-orange-100 py-10">
-        <Link href={"/posts"}>
-          <a aria-label={`View all blogs`}>
-            <button
-              type="button"
-              className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-600 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
-            >
-              &larr; Back
-            </button>
-          </a>
-        </Link>
+        {/* <Link href={"/posts"}> */}
+        <a aria-label={`View all blogs`}>
+          <button
+            type="button"
+            onClick={() => router.back()}
+            className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-600 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
+          >
+            &larr; Back
+          </button>
+        </a>
+        {/* </Link> */}
         <span className="inline-flex rounded-md shadow-sm"></span>
       </div>
     </div>
