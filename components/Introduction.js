@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const meta = {
   description:
-    "I'm a Solutions Engineer who predominantly works with analytics tools such as Tableau & Alteryx. I'm an AWS Certified Developer and a Tableau DataDev Ambassador. I like to write & teach about data analytics, web development & the cloud.",
+    "I'm a Solutions Engineer who is passionate about working at the intersection of data, web development and the cloud. I'm an AWS Certified Developer and a Tableau DataDev Ambassador. I like to write & teach about data analytics, web development & the cloud.",
 };
 
 function Introduction() {
@@ -21,7 +21,10 @@ function Introduction() {
       </a>
       <div className="text-center sm:text-left">
         <h1 className="lg:text-3xl leading-9 tracking-wide font-extrabold text-gray-900 sm:text-4xl sm:leading-10 text-3xl">
-          Hi! I'm Andre
+          Hi! I'm{" "}
+          <span className="transition duration-600 ease-in-out hover:bg-orange-400 hover:text-white">
+            Andre
+          </span>
         </h1>
         <div className="mt-2">
           <p className="text-lg leading-7 tracking-tight font-medium text-gray-500">
