@@ -72,8 +72,8 @@ function YouTube() {
             )}
             {!youtubeState && error && (
               <p>
-                Whoops, there's an error. We probably hit the YouTube API rate
-                limit. Please come back later
+                {` Whoops, there's an error. We probably hit the YouTube API rate
+                limit. Please come back later`}
               </p>
             )}
           </div>
@@ -119,8 +119,8 @@ function YouTube() {
             )}
             {!youtubeState && error && (
               <p>
-                Whoops, there's an error. We probably hit the YouTube API rate
-                limit. Please come back later
+                {`Whoops, there's an error. We probably hit the YouTube API rate
+                limit. Please come back later`}
               </p>
             )}
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const meta = {
   description:
@@ -9,19 +10,23 @@ const meta = {
 function Introduction() {
   return (
     <div className="flex flex-col pt-6 pb-8 items-center space-y-8 sm:items-start sm:space-y-0 sm:flex-row sm:space-x-8 border-b-2 border-orange-100 ">
-      <a className="flex-shrink-0" href="/">
-        <span className="sr-only">Home</span>
-        <Image
-          className="h-28 w-28 sm:h-36 sm:w-36 rounded-lg object-cover"
-          src="https://res.cloudinary.com/dmim37dbf/image/upload/v1548761374/image_andre.png"
-          alt="andre image"
-          height={145}
-          width={145}
-        />
-      </a>
+      <Link href="/">
+        <a className="flex-shrink-0">
+          <span className="sr-only">Home</span>
+          <Image
+            className="h-28 w-28 sm:h-36 sm:w-36 rounded-lg object-cover"
+            src="https://res.cloudinary.com/dmim37dbf/image/upload/v1548761374/image_andre.png"
+            alt="Picture of Andre"
+            height={145}
+            width={145}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,LrMEsWNe}Sj]^NsmM{jF-Ua#NabI"
+          />
+        </a>
+      </Link>
       <div className="text-center sm:text-left">
         <h1 className="lg:text-3xl leading-9 tracking-wide font-extrabold text-gray-900 sm:text-4xl sm:leading-10 text-3xl">
-          Hi! I'm{" "}
+          Hi! I&apos;m{" "}
           <span className="transition duration-600 ease-in-out hover:bg-orange-400 hover:text-white">
             Andre
           </span>

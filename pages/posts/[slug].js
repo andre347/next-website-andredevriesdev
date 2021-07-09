@@ -16,23 +16,23 @@ import Image from "next/image";
 
 export default function Blog({ content, frontmatter }) {
   const router = useRouter();
-  const renderers = {
-    image: ({ alt, src, title }) => (
-      <div
-        className="hello"
-        style={{ position: "relative", width: "auto", height: "500px" }}
-      >
-        <Image
-          alt={alt}
-          src={src}
-          title={title}
-          layout="fill"
-          objectFit="none"
-          quality={100}
-        />
-      </div>
-    ),
-  };
+  // const renderers = {
+  //   image: ({ alt, src, title }) => (
+  //     <div
+  //       className="hello"
+  //       style={{ position: "relative", width: "auto", height: "500px" }}
+  //     >
+  //       <Image
+  //         alt={alt}
+  //         src={src}
+  //         title={title}
+  //         layout="fill"
+  //         objectFit="none"
+  //         quality={100}
+  //       />
+  //     </div>
+  //   ),
+  // };
 
   return (
     <div

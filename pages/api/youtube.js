@@ -28,7 +28,7 @@ async function getLatestVideos() {
   return mappedEntries;
 }
 
-export default async (_, res) => {
+export default async function handler(_, res) {
   const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -61,4 +61,4 @@ export default async (_, res) => {
     videoCount,
     videoStats,
   });
-};
+}
