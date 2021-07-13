@@ -7,7 +7,9 @@ import { getSortedBlogsData } from "@/lib/blogs";
 import Layout from "@/components/Layout";
 import Introduction from "@/components/Introduction";
 import tinytime from "tinytime";
-
+// view count for blogs
+import BlogViews from "@/components/BlogViews";
+import BlogPost from "@/components/BlogPost";
 // template for date
 const template = tinytime("{MMMM} {DD}, {YYYY}");
 
@@ -27,39 +29,14 @@ const Home = ({ allBlogsData }) => {
       <Introduction />
       <ul className="">
         {allBlogsData.map(({ title, id, description, date, category }) => (
-          <li key={id} className="py-9">
-            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-2 xl:items-baseline">
-              <dl className="col-span-4">
-                <dt className="sr-only">Published on</dt>
-                <dd className="text-base leading-6 font-medium text-gray-500">
-                  <time dateTime={date}>{template.render(new Date(date))}</time>{" "}
-                  &bull; <span>{category}</span>
-                </dd>
-              </dl>
-              <div className="space-y-5 xl:col-span-4">
-                <div className="space-y-6">
-                  <h2 className="text-2xl leading-8 font-bold tracking-tight">
-                    <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-                      <a className="text-gray-800">{title}</a>
-                    </Link>
-                  </h2>
-                  <div className="prose max-w-none text-gray-500 line-clamp-4">
-                    {description}
-                  </div>
-                </div>
-                <div className="text-base leading-6 font-medium">
-                  <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-                    <a
-                      className="text-orange-500 hover:text-orange-600 transition ease-in-out duration-150 text-base leading-6"
-                      aria-label={`Read "${title}"`}
-                    >
-                      Read more &rarr;
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </article>
-          </li>
+          <BlogPost
+            key={id}
+            title={title}
+            id={id}
+            description={description}
+            date={date}
+            category={category}
+          />
         ))}
         <div className="text-base leading-6 font-medium border-t-2 border-orange-100 py-10">
           <Link href={"/posts"}>

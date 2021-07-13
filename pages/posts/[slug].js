@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Link from "next/link";
+
+import BlogViews from "@/components/BlogViews";
 
 import fs from "fs";
 import path from "path";
@@ -14,25 +15,8 @@ const template = tinytime("{MMMM} {DD}, {YYYY}");
 // https://jacobwicks.github.io/2020/06/19/rendering-markdown-and-resizing-images-with-react-markdown.html
 import Image from "next/image";
 
-export default function Blog({ content, frontmatter }) {
+export default function Blog({ content, frontmatter, slug }) {
   const router = useRouter();
-  // const renderers = {
-  //   image: ({ alt, src, title }) => (
-  //     <div
-  //       className="hello"
-  //       style={{ position: "relative", width: "auto", height: "500px" }}
-  //     >
-  //       <Image
-  //         alt={alt}
-  //         src={src}
-  //         title={title}
-  //         layout="fill"
-  //         objectFit="none"
-  //         quality={100}
-  //       />
-  //     </div>
-  //   ),
-  // };
 
   return (
     <div
@@ -67,7 +51,8 @@ export default function Blog({ content, frontmatter }) {
               <time dateTime={frontmatter.date}>
                 {template.render(new Date(frontmatter.date))}
               </time>{" "}
-              &bull; <span>{frontmatter.category}</span>
+              &bull; <span>{frontmatter.category}</span> &bull;{" "}
+              <BlogViews slug={slug} />
             </dd>
           </dl>
         }
@@ -130,6 +115,7 @@ export async function getStaticProps({ params: { slug } }) {
     props: {
       content: `# ${data.title}\n${content}`,
       frontmatter,
+      slug,
     },
   };
 }
