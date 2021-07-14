@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import BlogViews from "@/components/BlogViews";
-
+import CodeBlock from "@/components/Codeblock";
 import fs from "fs";
 import path from "path";
 import ReactMarkdown from "react-markdown/with-html";
@@ -63,7 +63,7 @@ export default function Blog({ content, frontmatter, slug }) {
             escapeHtml={false}
             source={content}
             linkTarget={"_target='blank'"}
-            // renderers={renderers}
+            renderers={{ code: CodeBlock }}
           />
         </div>
       </div>
