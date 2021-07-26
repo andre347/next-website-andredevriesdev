@@ -26,7 +26,7 @@ const CSP = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com;
   child-src *.google.com;
-  style-src 'self' 'unsafe-inline' *.googleapis.com *.rsms.me;
+  style-src 'self' 'unsafe-inline' *.googleapis.com *.rsms.me/inter/*;
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
