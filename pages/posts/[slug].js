@@ -42,6 +42,7 @@ export default function Blog({ content, frontmatter, slug }) {
           key="ogsitename"
         />
         <meta property="og:title" content={frontmatter.title} key="ogtitle" />
+        <meta property="og:description" content={frontmatter.description} />
       </Head>
       <div className="hidden sm:block py-4 sm:pt-11 xl:pt-11  w-96">
         {
