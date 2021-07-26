@@ -5,6 +5,14 @@ module.exports = {
       "theinformationlab.co.uk", // for Information Lab Images
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: securityHeaders,
+      },
+    ];
+  },
   webpack: (config, { dev, isServer }) => {
     // RSS feed
     if (isServer) {
@@ -13,3 +21,19 @@ module.exports = {
     return config;
   },
 };
+
+const securityHeaders = [
+  {
+    key: "X-Frame-Options",
+    value: "DENY",
+  },
+  {
+    key: "X-Content-Type-Options",
+    value: "nosniff",
+  },
+  {
+    key: "Permissions-Policy",
+    value:
+      "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()",
+  },
+];
