@@ -22,7 +22,22 @@ module.exports = {
   },
 };
 
+const CSP = `
+  default-src 'self';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com;
+  child-src *.google.com;
+  style-src 'self' 'unsafe-inline' *.googleapis.com *.rsms.me;
+  img-src * blob: data:;
+  media-src 'none';
+  connect-src *;
+  font-src 'self';
+`;
+
 const securityHeaders = [
+  {
+    key: "Content-Security-Policy",
+    value: CSP.replace(/\n/g, ""),
+  },
   {
     key: "X-Frame-Options",
     value: "DENY",
@@ -35,5 +50,13 @@ const securityHeaders = [
     key: "Permissions-Policy",
     value:
       "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()",
+  },
+  {
+    key: "X-DNS-Prefetch-Control",
+    value: "on",
+  },
+  {
+    key: "Referrer-Policy",
+    value: "origin-when-cross-origin",
   },
 ];
