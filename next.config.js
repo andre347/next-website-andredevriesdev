@@ -25,7 +25,7 @@ module.exports = {
 const CSP = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com;
-  child-src *.google.com;
+  child-src *.youtube.com *.google.com;
   style-src 'self' 'unsafe-inline' *;
   img-src * blob: data:;
   media-src 'none';
