@@ -24,7 +24,7 @@ module.exports = {
 
 const CSP = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com;
   child-src *.google.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com *.rsms.me;
   img-src * blob: data:;
