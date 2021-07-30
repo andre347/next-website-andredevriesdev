@@ -42,15 +42,7 @@ function About() {
           </p>
           <h3>Web Development</h3>
           <p>
-            {` I also regularly blog and work on web development and creative
-            coding projects. This is often in relation to Tableau and Alteryx
-            🤓. I mainly use web technologies to help others be successful with
-            Tableau & Alteryx and I have created many open-source tools to make
-            life easier with these tools. My front-end framework of choice is
-            React (Next.js) and I'm also using D3.js if I feel up for it. Early
-            on in my career I focused on Python but in the last few years I
-            primarily write JavaScript & Typescript. If you want to get a sense
-            of what I create, then head over to my`}{" "}
+            {`I really enjoy building web applications and integrating web technologies in all kinds of ways. You can call me a bit of a 'hybrid' developer - lots of the applications that I built are web based an integrate with other tools in the data analytics space. I mainly use web technologies to help others be successful with Tableau & Alteryx and I have created many open-source tools to make life easier with these tools. My front-end framework of choice is React (Next.js) and I'm also using D3.js if I feel up for it. Early on in my career I focused on Python but in the last few years I primarily write JavaScript & Typescript. If you want to get a sense of what I create, then head over to my`}{" "}
             <a
               href="https://www.github.com/andre347"
               target="_blank"
@@ -78,11 +70,25 @@ function About() {
             firms in the Fortune 500. I have also designed and delivered a whole
             host of training sessions in more than 10 countries across four
             continents. In 2019 alone I taught Tableau and Alteryx to more than
-            a 1000 people. The training content ranges from introducing Tableau
-            & Alteryx to specific topics such as using APIs and web development
-            related topics.
+            a 1000 people in person. The training content ranges from
+            introducing Tableau & Alteryx to specific topics such as using APIs
+            and web development related topics.
           </p>
-          <h3>Certifications: </h3>
+          <h3>DataDev Ambassador</h3>
+          <p>
+            In 2020 I was elected as one of the first{" "}
+            <a
+              href="https://www.tableau.com/about/blog/2020/9/please-welcome-2020-tableau-ambassadors"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Tableau DataDev Ambassadors
+            </a>
+            . A huge honour and a confirmation that I was helping people in the
+            community with all the content I delivered through videos, blog
+            posts and speaker events!
+          </p>
+          <h3>Certifications</h3>
           <ul>
             <li>Tableau Certified Trainer</li>
             <li>Tableau Desktop Certified</li>
