@@ -18,7 +18,7 @@
     "googleapis": "^70.0.0",
     "gray-matter": "^4.0.2",
     "ioredis": "^4.27.6",
-    "next": "^11.0.1",
+    "next": "^11.1.0",
     "postcss": "^8.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
