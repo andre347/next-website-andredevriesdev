@@ -12,7 +12,7 @@ function GithubLayout({ children }) {
     <ProfileHeaderPage>
       <h3
         id="main"
-        className="mt-8 text-xl leading-7 font-semibold text-gray-900"
+        className="font-mono mt-8 text-xl leading-7 font-extralight text-gray-800"
       >
         {githubTitle}
       </h3>

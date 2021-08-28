@@ -64,7 +64,7 @@ function Posts({ allBlogsData }) {
         <title>All Blogs - Andre de Vries</title>
       </Head>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
+        <h1 className="font-mono text-3xl leading-9 font-extralight text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
           All Blogs
         </h1>
         <p className="text-lg leading-7 text-gray-500">
@@ -154,7 +154,7 @@ function Posts({ allBlogsData }) {
             </p>
             <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
               <a className="block">
-                <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                <h3 className="font-mono mt-2 text-xl leading-7 font-extralight text-gray-800">
                   {title}
                 </h3>
                 <p className="mt-3 text-base leading-6 text-gray-500">

@@ -25,7 +25,7 @@ export default function BlogPost({ id, title, description, date, category }) {
         </dl>
         <div className="space-y-5 xl:col-span-4">
           <div className="space-y-6">
-            <h2 className="text-2xl leading-8 font-bold tracking-tight">
+            <h2 className="text-2xl leading-8 tracking-tight font-mono text-extralight">
               <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
                 <a className="text-gray-800">{title}</a>
               </Link>
