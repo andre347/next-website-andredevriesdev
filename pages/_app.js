@@ -25,7 +25,7 @@ const meta = {
     "serverless",
   ],
   description:
-    "Solutions Engineer specialising in data analytics, web development & the cloud.",
+    "Developer specialising in data engineering, web development & the cloud.",
 };
 
 function App({ Component, pageProps }) {
