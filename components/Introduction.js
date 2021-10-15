@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const meta = {
   description:
-    "I'm a Solutions Engineer who is passionate about working at the intersection of data, web development and the cloud. I'm an AWS Certified Developer and a Tableau DataDev Ambassador. I like to write & teach about data analytics, web development & the cloud.",
+    "I'm a Developer / Solutions Engineer who is passionate about working at the intersection of data engineering, web development and the cloud. I'm an AWS Certified Developer and a Tableau DataDev Ambassador. I like to write & teach about data analytics, web development & the cloud.",
 };
 
 function Introduction() {

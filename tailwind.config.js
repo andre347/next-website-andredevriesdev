@@ -1,10 +1,13 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: {
-    enabled: process.env.NODE_ENV === "production",
-    content: ["./{components,pages}/**/*.{js,ts,jsx,tsx}"],
-  },
+  mode: "jit",
+  // purge: {
+  //   enabled: process.env.NODE_ENV === "production",
+  //   content: ["./{components,pages}/**/*.{js,ts,jsx,tsx}"],
+  // },
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: false,
   variants: {
     extend: {
       backgroundColor: ["active", "focus-visible"],
