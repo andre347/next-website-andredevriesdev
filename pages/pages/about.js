@@ -90,7 +90,8 @@ function About() {
             posts and speaker events! And I was even asked to{" "}
             <a
               href="https://www.tableau.com/about/blog/2021/9/congratulations-and-welcome-2021-tableau-ambassadors"
-              target="_blank"
+              target="__blank"
+              rel="noopener noreferrer"
             >
               {" "}
               come back
