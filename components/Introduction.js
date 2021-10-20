@@ -25,7 +25,7 @@ function Introduction() {
         </a>
       </Link>
       <div className="text-center sm:text-left">
-        <h1 className="font-mono lg:text-3xl leading-9 tracking-wide font-extralight text-gray-900 sm:text-4xl sm:leading-10 text-3xl">
+        <h1 className="lg:text-3xl leading-9 tracking-wide font-extrabold text-gray-900 sm:text-4xl sm:leading-10 text-3xl">
           Hi! I&apos;m{" "}
           <span className="transition duration-600 ease-in-out hover:bg-orange-400 hover:text-white">
             Andre

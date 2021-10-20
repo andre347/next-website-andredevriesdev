@@ -12,7 +12,7 @@ function Header() {
           <Link href="/">
             <a
               aria-label="andredevries.dev"
-              className="text-sm font-mono font-extralight text-gray-700 hover:text-gray-900 uppercase md:text-base lg:text-xl"
+              className="text-sm font-light text-gray-700 hover:text-gray-900 uppercase md:text-base lg:text-xl"
             >
               Andre{" "}
               <span className="font-bold text-orange-500 hover:text-orange-600">

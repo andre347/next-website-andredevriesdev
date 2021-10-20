@@ -17,7 +17,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-        mono: ["Basement Grotesque", ...defaultTheme.fontFamily.sans],
       },
     },
     // typography: {
