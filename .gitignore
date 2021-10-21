@@ -29,3 +29,5 @@ yarn-error.log*
 
 posts/.DS_Store
 .vercel
+
+lib/analytics/*

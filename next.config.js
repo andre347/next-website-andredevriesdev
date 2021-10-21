@@ -26,6 +26,7 @@ const CSP = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com;
   child-src *.youtube.com *.google.com;
+  frame-src youtube.com www.youtube.com;
   style-src 'self' 'unsafe-inline' *;
   img-src * blob: data:;
   media-src 'none';
@@ -34,10 +35,10 @@ const CSP = `
 `;
 
 const securityHeaders = [
-  {
-    key: "Content-Security-Policy",
-    value: CSP.replace(/\n/g, ""),
-  },
+  // {
+  //   key: "Content-Security-Policy",
+  //   value: CSP.replace(/\n/g, ""),
+  // },
   {
     key: "X-Frame-Options",
     value: "DENY",

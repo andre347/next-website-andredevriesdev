@@ -78,6 +78,9 @@ function MobileHeader({ isOpen, setIsOpen }) {
         <MobileNavLink href="/posts">
           <a onClick={() => setIsOpen(!isOpen)}>Blogs</a>
         </MobileNavLink>
+        <MobileNavLink href="/courses">
+          <a onClick={() => setIsOpen(!isOpen)}>Courses</a>
+        </MobileNavLink>
         <MobileNavLink href="/pages/github#main">
           <a onClick={() => setIsOpen(!isOpen)}>Github</a>
         </MobileNavLink>
