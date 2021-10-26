@@ -43,6 +43,25 @@ function NavTabs() {
             );
           })}
         </nav>
+        {/* <div className="hidden max-w-screen-md grid-cols-4 gap-1 mx-auto md:grid">
+          {defaultRoutes.map((route) => {
+            const isActive = route.path === router.pathname;
+            const defaultClasses = `font-sans font-semibold flex rounded items-center text-opacity-40 justify-center py-2 text-sm`;
+            const activeClasses = `bg-gray-200`;
+            const inactiveClasses = `hover:bg-gray-900 filter-saturate hover:bg-opacity-5 dark:hover:bg-white dark:text-white  hover:text-gray-200 dark:hover:text-gray-100 text-tertiary`;
+            return (
+              <Link href={route.path} key={route.path}>
+                <a
+                  className={`
+                ${defaultClasses} 
+                ${isActive ? activeClasses : inactiveClasses}`}
+                >
+                  {route.label}
+                </a>
+              </Link>
+            );
+          })}
+        </div> */}
       </div>
     </div>
     // </div>
