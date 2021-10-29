@@ -118,4 +118,4 @@ This should give you a nice array with all the characters (87) and their height 
 
 **You can find all the code for this blog post in this [Github repository](https://github.com/andre347/do-while-loop-api)**
 
-Orginally posted at [andredevries.dev](https://andredevries.dev/posts/do-while-api-nodejs/)
+Originally posted at [andredevries.dev](https://andredevries.dev/posts/do-while-api-nodejs/)
