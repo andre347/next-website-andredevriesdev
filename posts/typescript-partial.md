@@ -36,7 +36,7 @@ You can see that we are setting the initial state to an empty object. If we woul
 const [car, setCar] = React.useState<CarModel>({});
 ```
 
-However, TypeScript does not like this because our intial state is an empty object and is missing the required properties that are specified in the **CarModel** interface. TypeScript is 😡. You will get an error message along the lines of:
+However, TypeScript does not like this because our initial state is an empty object and is missing the required properties that are specified in the **CarModel** interface. TypeScript is 😡. You will get an error message along the lines of:
 
 ```js
 Argument of type '{}' is not assignable to parameter of type 'CarModel | (() => CarModel)'.

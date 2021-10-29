@@ -29,7 +29,7 @@ I'm also copying the basic embed example on the Tableau website. Hence I'm inclu
 
 The next step is to add a div to the main HTML file with an ID so we can hook our Vue instance to it. Everything you're doing after this will go inside of this container.
 
-Now it's time to instantiate the Vue instance. You can do that by using an inline script tag, or using a seperate JavaScript file. Because this is a basic example I'm just using the former.
+Now it's time to instantiate the Vue instance. You can do that by using an inline script tag, or using a separate JavaScript file. Because this is a basic example I'm just using the former.
 
 You can see that 'el' refers to the main app container which we specified in the body of our HTML file. I'm also including the 'data' option in my Vue Instance. This data option only returns one string: 'Hello Tableau fans'.
 
