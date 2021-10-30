@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 function About() {
   return (
@@ -53,12 +53,13 @@ function About() {
             page.
           </p>
           <figure>
-            <img
+            <Image
               className="w-full rounded-lg"
               src="https://res.cloudinary.com/dmim37dbf/image/upload/v1634308213/personal%20blog/IMG_3800.jpg"
-              alt=""
+              alt="London hackathon winners 2019"
               width={1310}
               height={873}
+              layout="intrinsic"
             />
             <figcaption>London DataDev 2019 Hackathon winners!</figcaption>
           </figure>
