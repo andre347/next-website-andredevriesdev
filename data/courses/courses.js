@@ -200,7 +200,7 @@ export default {
           url: "5jIGsBQkNaI",
           length: 1.02e6,
           description:
-            "Learn how to embed a Tableau dashboard into a Salesforce page by using VisualForce pages",
+            "Learn how to embed a Tableau dashboard into a Salesforce page by using a VisualForce page",
         },
       ],
     },
