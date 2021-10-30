@@ -196,7 +196,7 @@ export default {
         },
         {
           id: 1,
-          title: "How to Embed Tableau into Salesforce: Basic Embedding",
+          title: "How to Embed Tableau into Salesforce: VisualForce pages",
           url: "5jIGsBQkNaI",
           length: 1.02e6,
           description:
