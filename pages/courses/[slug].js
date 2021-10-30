@@ -33,7 +33,11 @@ export default function Course({ slug, course }) {
 
       <div className="mt-4 grid gap-12 border-t-2 border-gray-100 pt-10 lg:grid-cols-1 lg:col-gap-5 lg:row-gap-12">
         <div>
-          <DynamicVideoComponent videoId={videoId} player={player} />
+          <div className="aspect-w-16 aspect-h-9">
+            {DynamicVideoComponent && (
+              <DynamicVideoComponent videoId={videoId} player={player} />
+            )}
+          </div>
           <h2 className="mt-4 text-sm text-gray-600">Watching: {videoName}</h2>
         </div>
         <div className="flow-root">

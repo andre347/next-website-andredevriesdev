@@ -1,14 +1,5 @@
-// load vim css
-import "@vime/core/themes/default.css";
-// load vim player
-import {
-  Player,
-  Ui,
-  LoadingScreen,
-  Youtube,
-  Skeleton,
-  DblClickFullscreen,
-} from "@vime/react";
+// new player
+import ReactPlayer from "react-player/youtube";
 
 import { useEffect } from "react";
 
@@ -17,20 +8,13 @@ export default function VideoPlayer({ videoId, player }) {
     console.log("Setting new video", videoId);
   }, [videoId, player]);
   return (
-    <Player
-      controls
+    <ReactPlayer
       ref={player}
       key={videoId}
-      autoplay={false}
-      currentProvider={"YouTube"}
-      debug={true}
-    >
-      <Youtube videoId={videoId} />
-      <Ui>
-        {/* <DblClickFullscreen /> */}
-        <LoadingScreen></LoadingScreen>
-        <Skeleton />
-      </Ui>
-    </Player>
+      width="100%"
+      height="100%"
+      controls
+      url={`https://www.youtube.com/watch?v=${videoId}`}
+    />
   );
 }
