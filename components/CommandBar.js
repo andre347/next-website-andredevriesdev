@@ -261,6 +261,14 @@ export default function CommandBar(props) {
           "_blank"
         ),
     },
+    {
+      id: "resume",
+      name: "See Resume",
+      shortcut: ["r"],
+      keywords: "view-resume",
+      section: "General",
+      perform: () => router.push("/resume"),
+    },
   ];
 
   return (
