@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useRouter } from "next/router";
-// import useDeepMatches from "@/lib/useDeepMatches";
 import {
   KBarAnimator,
   KBarProvider,
@@ -284,7 +283,6 @@ export default function CommandBar(props) {
           </KBarAnimator>
         </KBarPositioner>
       </KBarPortal>
-
       {props.children}
     </KBarProvider>
   );
