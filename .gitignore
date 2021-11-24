@@ -31,3 +31,6 @@ posts/.DS_Store
 .vercel
 
 lib/analytics/*
+
+# blog post not finished
+/posts/3-trends-data.md
