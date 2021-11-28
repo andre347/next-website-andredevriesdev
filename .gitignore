@@ -33,4 +33,4 @@ posts/.DS_Store
 lib/analytics/*
 
 # blog post not finished
-/posts/3-trends-data.md
+# /posts/3-trends-data.md
