@@ -17,7 +17,7 @@ I have been using dbt more and more as my main tool for data transformation and 
 
 dbt is built for git and it is the perfect tool to integrate with your continuous integration and continuous delivery (CI/CD) pipeline. [Github Actions](https://github.com/features/actions) make it easy to automate your software workflows and allows you to automate your build, test, and deployment pipeline. Typically Gtihub provides the virtual machines for you to run your workflows, making it super easy to get up an running. They also have a [generous free tier](https://docs.github.com/en/actions/learn-github-actions/usage-limits-billing-and-administration). Actions typically [configured](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows) run on particular _triggers_ such as forking a repo, commenting on an issue, pushing to a branch etc. You can also configure actions to run on a schedule via CRON. That is the option we are going to look at in this blog post.
 
-# How to configure Github Actions for dbt
+## How to configure Github Actions for dbt
 
 Github Actions workflows are defined by a YAML file, which is checked in to your repository in a `.github/workflows` folder. It will run when it is triggered by an event in your repository, or they can be triggered manually, or at a defined schedule (CRON). You can configure Github Actions for any of your repositories on Github. There are a few steps involved for each workflow you want to configure. Let's take a look at configuring one for your dbt project:
 

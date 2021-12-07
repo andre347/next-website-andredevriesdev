@@ -18,9 +18,11 @@ export default function BlogPost({ id, title, description, date, category }) {
           <dd className="text-base leading-6 font-medium text-gray-500">
             <time dateTime={date}>{template.render(new Date(date))}</time>{" "}
             &bull; <span>{category}</span> &bull;{" "}
-            {`${viewCount > 0 ? viewCount.toLocaleString() : "--"} ${
-              viewCount === 1 ? "view" : "views"
-            }`}
+            {viewCount &&
+              `${viewCount > 0 ? viewCount.toLocaleString() : "--"} ${
+                viewCount === 1 ? "view" : "views"
+              }`}
+            {!viewCount && ` views`}
           </dd>
         </dl>
         <div className="space-y-5 xl:col-span-4">
