@@ -4,14 +4,14 @@
         <description><![CDATA[Andre de Vries]]></description>
         <link>https://andredevries.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 06 Dec 2021 21:49:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Dec 2021 20:31:26 GMT</lastBuildDate>
         <atom:link href="https://andredevries.dev/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[3 Tooltip Tips in Tableau]]></title>
-            <description><![CDATA[Tooltips are often neglected and overseen in Tableau. Sometimes you see great dashboards which tell an amazing story but once you start hovering over marks you'll notice that the designer didn't pay any attention to the tooltips. In this blog post I'll give you some tips on how to format your tooltips.]]></description>
-            <link>https://andredevries.dev/posts/3-tooltip-tips-tableau</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/3-tooltip-tips-tableau</guid>
-            <pubDate>Sun, 15 May 2016 00:00:00 GMT</pubDate>
+            <title><![CDATA[5 Reasons Why You Should Join the Tableau #DataDev Hackathons]]></title>
+            <description><![CDATA[The final Tableau 2019 hackathon which took place on the 12th of November at the Tableau Conference was the last session organised by the Tableau Developer team in 2019. In this blog I give 5 Reasons why you should join the next Tableau Developer Hackathon.]]></description>
+            <link>https://andredevries.dev/posts/5-reasons-datadev</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/5-reasons-datadev</guid>
+            <pubDate>Sun, 17 Nov 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Three key trends that will shape the future of the data space]]></title>
@@ -21,11 +21,11 @@
             <pubDate>Sat, 27 Nov 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[5 Reasons Why You Should Join the Tableau #DataDev Hackathons]]></title>
-            <description><![CDATA[The final Tableau 2019 hackathon which took place on the 12th of November at the Tableau Conference was the last session organised by the Tableau Developer team in 2019. In this blog I give 5 Reasons why you should join the next Tableau Developer Hackathon.]]></description>
-            <link>https://andredevries.dev/posts/5-reasons-datadev</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/5-reasons-datadev</guid>
-            <pubDate>Sun, 17 Nov 2019 00:00:00 GMT</pubDate>
+            <title><![CDATA[3 Tooltip Tips in Tableau]]></title>
+            <description><![CDATA[Tooltips are often neglected and overseen in Tableau. Sometimes you see great dashboards which tell an amazing story but once you start hovering over marks you'll notice that the designer didn't pay any attention to the tooltips. In this blog post I'll give you some tips on how to format your tooltips.]]></description>
+            <link>https://andredevries.dev/posts/3-tooltip-tips-tableau</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/3-tooltip-tips-tableau</guid>
+            <pubDate>Sun, 15 May 2016 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Making your Alteryx Workflows Enterprise Ready: A checklist]]></title>
@@ -56,18 +56,18 @@
             <pubDate>Fri, 04 Jan 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[How I became an AWS Certified Developer - how to pass the associate exam!]]></title>
-            <description><![CDATA[A few months ago I passed the AWS Certified Developer Associate Exam. This exam tests your knowledge of the core AWS services that you need to use for developing, deploying and debugging cloud based applications. In this blog post I give more background to the exam and give some tips & tricks on how you can pass!]]></description>
-            <link>https://andredevries.dev/posts/aws-certified-developer</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/aws-certified-developer</guid>
-            <pubDate>Sun, 30 Aug 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[How to deploy a React application on AWS Amplify]]></title>
             <description><![CDATA[While studying for one of the AWS Exams I found a service called AWS Amplify. In this video I show you how easy it is to use this service to push a React application to a repository on Github and then have it automatically deploy on AWS.]]></description>
             <link>https://andredevries.dev/posts/aws-amplify-react</link>
             <guid isPermaLink="true">https://andredevries.dev/posts/aws-amplify-react</guid>
             <pubDate>Sun, 08 Dec 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How I became an AWS Certified Developer - how to pass the associate exam!]]></title>
+            <description><![CDATA[A few months ago I passed the AWS Certified Developer Associate Exam. This exam tests your knowledge of the core AWS services that you need to use for developing, deploying and debugging cloud based applications. In this blog post I give more background to the exam and give some tips & tricks on how you can pass!]]></description>
+            <link>https://andredevries.dev/posts/aws-certified-developer</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/aws-certified-developer</guid>
+            <pubDate>Sun, 30 Aug 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Build your first Tableau Dashboard Extension]]></title>
@@ -77,11 +77,25 @@
             <pubDate>Mon, 15 Oct 2018 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[How to create a user snippet in VS Code]]></title>
+            <description><![CDATA[I write all my blog posts in markdown in VS Code. That's because this website is built with Gatsby and this tool makes it extremely easy to create pages with it. What I don't like about writing markdown, especially for a Gatsby blog, is that I have to write frontmatter each time I start writing. A quick way of scaffolding out this frontmatter is by using a VS Code User snippet. Let's take a look at how to create such a snippet.]]></description>
+            <link>https://andredevries.dev/posts/creating-user-snippets-vscode</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/creating-user-snippets-vscode</guid>
+            <pubDate>Sun, 09 Feb 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Connecting Tableau to Web Data Sources]]></title>
             <description><![CDATA[In this video I explain how I built a Tableau Web Data Connector (WDC) that gets daily Covid data for The Netherlands. In the video you'll learn my approach to building a WDC and also how I deploy the application to Vercel.]]></description>
             <link>https://andredevries.dev/posts/covid-web-data-connector</link>
             <guid isPermaLink="true">https://andredevries.dev/posts/covid-web-data-connector</guid>
             <pubDate>Wed, 05 Aug 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[D3.js and Vue.JS]]></title>
+            <description><![CDATA[In this blog, I will describe how you can integrate D3 into Vue.js. I'm also introducing the Vue CLI and how to integrate D3 there.]]></description>
+            <link>https://andredevries.dev/posts/d3-vuejs</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/d3-vuejs</guid>
+            <pubDate>Thu, 03 Jan 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How to easily create a Postgres database in Docker]]></title>
@@ -91,18 +105,11 @@
             <pubDate>Tue, 18 Aug 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[How to create a user snippet in VS Code]]></title>
-            <description><![CDATA[I write all my blog posts in markdown in VS Code. That's because this website is built with Gatsby and this tool makes it extremely easy to create pages with it. What I don't like about writing markdown, especially for a Gatsby blog, is that I have to write frontmatter each time I start writing. A quick way of scaffolding out this frontmatter is by using a VS Code User snippet. Let's take a look at how to create such a snippet.]]></description>
-            <link>https://andredevries.dev/posts/creating-user-snippets-vscode</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/creating-user-snippets-vscode</guid>
-            <pubDate>Sun, 09 Feb 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[D3.js and Vue.JS]]></title>
-            <description><![CDATA[In this blog, I will describe how you can integrate D3 into Vue.js. I'm also introducing the Vue CLI and how to integrate D3 there.]]></description>
-            <link>https://andredevries.dev/posts/d3-vuejs</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/d3-vuejs</guid>
-            <pubDate>Thu, 03 Jan 2019 00:00:00 GMT</pubDate>
+            <title><![CDATA[How to Embed Tableau Dashboards into Salesforce]]></title>
+            <description><![CDATA[There are many ways of embedding a Tableau Dashboard into Salesforce. I recorded two videos that show how to do that. In the first one I'm showing the easy way with no coding involved. The second video uses a Visualforce page that integrates with a Tableau dashboard. Click on 'Read' to watch the videos.]]></description>
+            <link>https://andredevries.dev/posts/embed-tableau-salesforce</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/embed-tableau-salesforce</guid>
+            <pubDate>Wed, 26 Feb 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How to Change a Discrete Field Label in Tableau]]></title>
@@ -117,20 +124,6 @@
             <link>https://andredevries.dev/posts/docker-basics</link>
             <guid isPermaLink="true">https://andredevries.dev/posts/docker-basics</guid>
             <pubDate>Tue, 06 Apr 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[How to Embed Tableau Dashboards into Salesforce]]></title>
-            <description><![CDATA[There are many ways of embedding a Tableau Dashboard into Salesforce. I recorded two videos that show how to do that. In the first one I'm showing the easy way with no coding involved. The second video uses a Visualforce page that integrates with a Tableau dashboard. Click on 'Read' to watch the videos.]]></description>
-            <link>https://andredevries.dev/posts/embed-tableau-salesforce</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/embed-tableau-salesforce</guid>
-            <pubDate>Wed, 26 Feb 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[How to use a 'do... while' loop for API pagination]]></title>
-            <description><![CDATA[Many APIs provide their data in several pages. In order to grab all of the data of these pages you have to make multiple API requests in a loop. In JavaScript there are multiple ways of writing such a loop. In this blog I take a look at the 'do... while' loop.]]></description>
-            <link>https://andredevries.dev/posts/do-while-api-nodejs</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/do-while-api-nodejs</guid>
-            <pubDate>Mon, 24 Feb 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[ES6: What are Classes?]]></title>
@@ -161,20 +154,6 @@
             <pubDate>Tue, 12 Mar 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Tableau Metadata API, GraphQL and how to get data with Alteryx - Part One]]></title>
-            <description><![CDATA[In late 2019 Tableau released the Metadata API. This is a new API that allows you to query assets and metadata about your Tableau systems. It allows you to track lineage, do impact analysis and find content on your server. In this first blog post I discuss what this new API can do, how it works and what GraphQL is. In the second post I will explain how to use Alteryx to connect and query the API.]]></description>
-            <link>https://andredevries.dev/posts/graphql-metadata-tableau</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/graphql-metadata-tableau</guid>
-            <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Google Sheets as a Backend with Next.js]]></title>
-            <description><![CDATA[With the data fetching strategies in Next.js you can turn almost any database into your own backend. In this blog post you will learn how I quickly and securely used Google Sheets as a CMS for a static site built with Next.js.]]></description>
-            <link>https://andredevries.dev/posts/google-sheets-database-nextjs</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/google-sheets-database-nextjs</guid>
-            <pubDate>Wed, 21 Jul 2021 23:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[Extracting Calculated Fields from Tableau with Alteryx]]></title>
             <description><![CDATA[Have you ever thought about extracting your calculations from your Tableau workbook? Maybe you want or need to document all your calculations so you can easily show your colleagues the logic behind your calculations. In this blog I will share an Alteryx workflow that I built to extract calculations from a Tableau workbook and I will explain why you should download this workflow.]]></description>
             <link>https://andredevries.dev/posts/extract-calculated-fields-tableau-alteryx</link>
@@ -189,18 +168,18 @@
             <pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[How to install TailwindCSS?]]></title>
-            <description><![CDATA[In the previous blog post I explained what TailwindCSS is. In this post we will install the framework and discuss the various ways you can actually install it. This might not be one of the most exciting blog post out there, but it's more of an exercise and a resource for myself.]]></description>
-            <link>https://andredevries.dev/posts/how-to-install-tailwindcss</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/how-to-install-tailwindcss</guid>
-            <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+            <title><![CDATA[Google Sheets as a Backend with Next.js]]></title>
+            <description><![CDATA[With the data fetching strategies in Next.js you can turn almost any database into your own backend. In this blog post you will learn how I quickly and securely used Google Sheets as a CMS for a static site built with Next.js.]]></description>
+            <link>https://andredevries.dev/posts/google-sheets-database-nextjs</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/google-sheets-database-nextjs</guid>
+            <pubDate>Wed, 21 Jul 2021 23:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[How to create a Task Scheduler in NodeJS]]></title>
-            <description><![CDATA[In this blog post I'm describing how to setup a task for running your node code on a particular schedule.]]></description>
-            <link>https://andredevries.dev/posts/node-task-scheduler</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/node-task-scheduler</guid>
-            <pubDate>Fri, 15 Mar 2019 00:00:00 GMT</pubDate>
+            <title><![CDATA[Tableau Metadata API, GraphQL and how to get data with Alteryx - Part One]]></title>
+            <description><![CDATA[In late 2019 Tableau released the Metadata API. This is a new API that allows you to query assets and metadata about your Tableau systems. It allows you to track lineage, do impact analysis and find content on your server. In this first blog post I discuss what this new API can do, how it works and what GraphQL is. In the second post I will explain how to use Alteryx to connect and query the API.]]></description>
+            <link>https://andredevries.dev/posts/graphql-metadata-tableau</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/graphql-metadata-tableau</guid>
+            <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[NEW! The easiest way to embed Tableau into Salesforce]]></title>
@@ -210,18 +189,18 @@
             <pubDate>Tue, 22 Sep 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Better Tableau REST API Security with Personal Access Tokens]]></title>
-            <description><![CDATA[Currently authentication of the REST API in Tableau is handled with personal login details. In order to authenticate you need to send your credentials, however in 2019.4 we also get the ability to use Personal Access Tokens. A new addition to the developer toolkit which means you don't need to expose your password!]]></description>
-            <link>https://andredevries.dev/posts/personal-access-tokens-tableau</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/personal-access-tokens-tableau</guid>
-            <pubDate>Fri, 01 Nov 2019 00:00:00 GMT</pubDate>
+            <title><![CDATA[How to use a 'do... while' loop for API pagination]]></title>
+            <description><![CDATA[Many APIs provide their data in several pages. In order to grab all of the data of these pages you have to make multiple API requests in a loop. In JavaScript there are multiple ways of writing such a loop. In this blog I take a look at the 'do... while' loop.]]></description>
+            <link>https://andredevries.dev/posts/do-while-api-nodejs</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/do-while-api-nodejs</guid>
+            <pubDate>Mon, 24 Feb 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Tableau’s Document API & Python]]></title>
-            <description><![CDATA[In this blog I will go through the basics of the Document API, what you can do with it and we are going to create a Python script to extract information from a Tableau data source.]]></description>
-            <link>https://andredevries.dev/posts/python-tableau-documentapi</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/python-tableau-documentapi</guid>
-            <pubDate>Wed, 23 Nov 2016 00:00:00 GMT</pubDate>
+            <title><![CDATA[How to install TailwindCSS?]]></title>
+            <description><![CDATA[In the previous blog post I explained what TailwindCSS is. In this post we will install the framework and discuss the various ways you can actually install it. This might not be one of the most exciting blog post out there, but it's more of an exercise and a resource for myself.]]></description>
+            <link>https://andredevries.dev/posts/how-to-install-tailwindcss</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/how-to-install-tailwindcss</guid>
+            <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How to host a React application on AWS S3]]></title>
@@ -231,25 +210,25 @@
             <pubDate>Tue, 25 Aug 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Better Tableau REST API Security with Personal Access Tokens]]></title>
+            <description><![CDATA[Currently authentication of the REST API in Tableau is handled with personal login details. In order to authenticate you need to send your credentials, however in 2019.4 we also get the ability to use Personal Access Tokens. A new addition to the developer toolkit which means you don't need to expose your password!]]></description>
+            <link>https://andredevries.dev/posts/personal-access-tokens-tableau</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/personal-access-tokens-tableau</guid>
+            <pubDate>Fri, 01 Nov 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to create a Task Scheduler in NodeJS]]></title>
+            <description><![CDATA[In this blog post I'm describing how to setup a task for running your node code on a particular schedule.]]></description>
+            <link>https://andredevries.dev/posts/node-task-scheduler</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/node-task-scheduler</guid>
+            <pubDate>Fri, 15 Mar 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Scheduling dbt Core with Github Actions]]></title>
             <description><![CDATA[The data space is a super interesting area to be involved in. Some tools have been around for many years and have defined how we operate and work with data. However, lately we have seen some trends around tooling appear that are worth investigating. In this blog post, I will discuss three key trends that I think will define the future of the data landscape.]]></description>
             <link>https://andredevries.dev/posts/schedule-dbt-github-actions</link>
             <guid isPermaLink="true">https://andredevries.dev/posts/schedule-dbt-github-actions</guid>
             <pubDate>Tue, 07 Dec 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[How to integrate Alteryx with Slack]]></title>
-            <description><![CDATA[In this blog post I will explain how you can integrate Alteryx with Slack. This integration means you can interact with your Alteryx Gallery from within your Slack environment. This example includes slash commands to find a list of workflows in your Gallery and the ability to execute a workflow with said slash command.]]></description>
-            <link>https://andredevries.dev/posts/slack-alteryx-integration</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/slack-alteryx-integration</guid>
-            <pubDate>Sat, 26 Oct 2019 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Sentiment Analysis in Tableau & R]]></title>
-            <description><![CDATA[In this blog I will run you through the basics of one element of text analysis, sentiment analysis, how to connect and install R, R Server and R packages. I will be using some Twitter data to illustrate the sentiment analysis in Tableau.]]></description>
-            <link>https://andredevries.dev/posts/sentiment-analysis-r-alteryx</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/sentiment-analysis-r-alteryx</guid>
-            <pubDate>Wed, 02 Mar 2016 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How to quickly scaffold a Tableau Extensions Manifest file]]></title>
@@ -259,11 +238,11 @@
             <pubDate>Fri, 23 Aug 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[New in Tableau 10.2 - Join Calculation]]></title>
-            <description><![CDATA[In this blog I will look at the 'Join Calculation', a new feature in Tableau 10.2.]]></description>
-            <link>https://andredevries.dev/posts/tableau-102</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/tableau-102</guid>
-            <pubDate>Fri, 02 Dec 2016 00:00:00 GMT</pubDate>
+            <title><![CDATA[Tableau’s Document API & Python]]></title>
+            <description><![CDATA[In this blog I will go through the basics of the Document API, what you can do with it and we are going to create a Python script to extract information from a Tableau data source.]]></description>
+            <link>https://andredevries.dev/posts/python-tableau-documentapi</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/python-tableau-documentapi</guid>
+            <pubDate>Wed, 23 Nov 2016 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How to schedule an AWS Lambda function]]></title>
@@ -273,11 +252,18 @@
             <pubDate>Tue, 01 Sep 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Installing a Single Node Tableau Server in a Docker Container]]></title>
-            <description><![CDATA[Since Tableau Server version 2021.2 you can deploy a Tableau Server on Linux in a Docker container. In this blog post I take a look at this new new process.]]></description>
-            <link>https://andredevries.dev/posts/tableau-server-docker</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/tableau-server-docker</guid>
-            <pubDate>Tue, 10 Aug 2021 23:00:00 GMT</pubDate>
+            <title><![CDATA[Sentiment Analysis in Tableau & R]]></title>
+            <description><![CDATA[In this blog I will run you through the basics of one element of text analysis, sentiment analysis, how to connect and install R, R Server and R packages. I will be using some Twitter data to illustrate the sentiment analysis in Tableau.]]></description>
+            <link>https://andredevries.dev/posts/sentiment-analysis-r-alteryx</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/sentiment-analysis-r-alteryx</guid>
+            <pubDate>Wed, 02 Mar 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to integrate Alteryx with Slack]]></title>
+            <description><![CDATA[In this blog post I will explain how you can integrate Alteryx with Slack. This integration means you can interact with your Alteryx Gallery from within your Slack environment. This example includes slash commands to find a list of workflows in your Gallery and the ability to execute a workflow with said slash command.]]></description>
+            <link>https://andredevries.dev/posts/slack-alteryx-integration</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/slack-alteryx-integration</guid>
+            <pubDate>Sat, 26 Oct 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Talk! The What, Why, and How of Tableau Extensions]]></title>
@@ -287,18 +273,18 @@
             <pubDate>Tue, 24 Sep 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Partial Types in TypeScript]]></title>
-            <description><![CDATA[A partial type is a small part of the TypeScript language, but this feature has solved some major annoyances and issues that I ran into while using types with the useState hook in React.]]></description>
-            <link>https://andredevries.dev/posts/typescript-partial</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/typescript-partial</guid>
-            <pubDate>Thu, 02 Sep 2021 23:00:00 GMT</pubDate>
+            <title><![CDATA[Installing a Single Node Tableau Server in a Docker Container]]></title>
+            <description><![CDATA[Since Tableau Server version 2021.2 you can deploy a Tableau Server on Linux in a Docker container. In this blog post I take a look at this new new process.]]></description>
+            <link>https://andredevries.dev/posts/tableau-server-docker</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/tableau-server-docker</guid>
+            <pubDate>Tue, 10 Aug 2021 23:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Deploying multiple AWS Amplify environments on Vercel]]></title>
-            <description><![CDATA[I am working on a large Next.js project that uses Vercel for hosting and some of the backend is provided by AWS Amplify. I had to find a way to link specific Amplify environments to different Git branches and deployment branches on Vercel. This didn't seem as straightforward as expected.]]></description>
-            <link>https://andredevries.dev/posts/vercel-amplify-environment</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/vercel-amplify-environment</guid>
-            <pubDate>Wed, 28 Apr 2021 00:00:00 GMT</pubDate>
+            <title><![CDATA[New in Tableau 10.2 - Join Calculation]]></title>
+            <description><![CDATA[In this blog I will look at the 'Join Calculation', a new feature in Tableau 10.2.]]></description>
+            <link>https://andredevries.dev/posts/tableau-102</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/tableau-102</guid>
+            <pubDate>Fri, 02 Dec 2016 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Talk! Tableau Developers Virtual User Group]]></title>
@@ -308,11 +294,11 @@
             <pubDate>Sat, 27 Apr 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Alteryx: Web Scraping & APIs in 45 Minutes]]></title>
-            <description><![CDATA[At the Alteryx Inspire Europe Conference in October 2019 I hosted a training session on how to web scrape and connect to APIs in Alteryx. I did a repeat of that session as a webinar two weeks later. I have now uploaded the recording of that webinar to my YouTube Channel. Go to 'Read' to check out the recording!]]></description>
-            <link>https://andredevries.dev/posts/web-scraping-api-webinar</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/web-scraping-api-webinar</guid>
-            <pubDate>Wed, 20 Nov 2019 00:00:00 GMT</pubDate>
+            <title><![CDATA[Deploying multiple AWS Amplify environments on Vercel]]></title>
+            <description><![CDATA[I am working on a large Next.js project that uses Vercel for hosting and some of the backend is provided by AWS Amplify. I had to find a way to link specific Amplify environments to different Git branches and deployment branches on Vercel. This didn't seem as straightforward as expected.]]></description>
+            <link>https://andredevries.dev/posts/vercel-amplify-environment</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/vercel-amplify-environment</guid>
+            <pubDate>Wed, 28 Apr 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Web Data Connector for Tableau Public]]></title>
@@ -322,18 +308,18 @@
             <pubDate>Mon, 03 Jun 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Why Alteryx solves your Problems]]></title>
-            <description><![CDATA[How retracing and iterating backwards from your solution to your problem can be used within Alteryx]]></description>
-            <link>https://andredevries.dev/posts/why-alteryx-solves-problem</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/why-alteryx-solves-problem</guid>
-            <pubDate>Sat, 01 Jul 2017 00:00:00 GMT</pubDate>
+            <title><![CDATA[Partial Types in TypeScript]]></title>
+            <description><![CDATA[A partial type is a small part of the TypeScript language, but this feature has solved some major annoyances and issues that I ran into while using types with the useState hook in React.]]></description>
+            <link>https://andredevries.dev/posts/typescript-partial</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/typescript-partial</guid>
+            <pubDate>Thu, 02 Sep 2021 23:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[What is TailwindCSS?]]></title>
-            <description><![CDATA[In 2020 I want to focus more on learning how to create effective designs and how to get better at designing user experiences. A really exciting framework that will help me with this is TailwindCSS. In the next few months, while I'm learning, I will write a few more blog posts about this CSS framework. In this first post I want to explain what TailwindCSS is.]]></description>
-            <link>https://andredevries.dev/posts/what-is-tailwindcss</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/what-is-tailwindcss</guid>
-            <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
+            <title><![CDATA[Talk! New in Tableau: Trigger Events with Webhooks]]></title>
+            <description><![CDATA[In version 2019.4 Tableau released the ability to use webhooks in the platform. With webhooks you are able to integrate Tableau events in your own applications. An example could be a message in your Slack work space when a new workbook was published or a text message to your boss when an extract fails (options are endless). In this webinar my colleague Laine Caruzca and I went over how to configure these web hooks and how to use no-code solutions such as Zapier and IFTTT. Go to 'Read' to check out the recording!]]></description>
+            <link>https://andredevries.dev/posts/webhooks-webinar</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/webhooks-webinar</guid>
+            <pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Off the hook! Automating Tableau with Webhooks]]></title>
@@ -343,11 +329,25 @@
             <pubDate>Sun, 27 Oct 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Talk! New in Tableau: Trigger Events with Webhooks]]></title>
-            <description><![CDATA[In version 2019.4 Tableau released the ability to use webhooks in the platform. With webhooks you are able to integrate Tableau events in your own applications. An example could be a message in your Slack work space when a new workbook was published or a text message to your boss when an extract fails (options are endless). In this webinar my colleague Laine Caruzca and I went over how to configure these web hooks and how to use no-code solutions such as Zapier and IFTTT. Go to 'Read' to check out the recording!]]></description>
-            <link>https://andredevries.dev/posts/webhooks-webinar</link>
-            <guid isPermaLink="true">https://andredevries.dev/posts/webhooks-webinar</guid>
-            <pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate>
+            <title><![CDATA[Alteryx: Web Scraping & APIs in 45 Minutes]]></title>
+            <description><![CDATA[At the Alteryx Inspire Europe Conference in October 2019 I hosted a training session on how to web scrape and connect to APIs in Alteryx. I did a repeat of that session as a webinar two weeks later. I have now uploaded the recording of that webinar to my YouTube Channel. Go to 'Read' to check out the recording!]]></description>
+            <link>https://andredevries.dev/posts/web-scraping-api-webinar</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/web-scraping-api-webinar</guid>
+            <pubDate>Wed, 20 Nov 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What is TailwindCSS?]]></title>
+            <description><![CDATA[In 2020 I want to focus more on learning how to create effective designs and how to get better at designing user experiences. A really exciting framework that will help me with this is TailwindCSS. In the next few months, while I'm learning, I will write a few more blog posts about this CSS framework. In this first post I want to explain what TailwindCSS is.]]></description>
+            <link>https://andredevries.dev/posts/what-is-tailwindcss</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/what-is-tailwindcss</guid>
+            <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Why Alteryx solves your Problems]]></title>
+            <description><![CDATA[How retracing and iterating backwards from your solution to your problem can be used within Alteryx]]></description>
+            <link>https://andredevries.dev/posts/why-alteryx-solves-problem</link>
+            <guid isPermaLink="true">https://andredevries.dev/posts/why-alteryx-solves-problem</guid>
+            <pubDate>Sat, 01 Jul 2017 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[What’s this new Tableau .trex filetype?]]></title>
