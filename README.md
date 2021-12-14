@@ -1,4 +1,15 @@
+<div align="center">
+<img src="https://img.shields.io/github/license/andre347/next-website-andredevriesdev" />
+<img src="https://img.shields.io/github/languages/top/andre347/next-website-andredevriesdev" />
+</div>
+<div align="center">
+<img src="https://img.shields.io/github/package-json/dependency-version/andre347/next-website-andredevriesdev/react?filename=package.json" />
+<img src="https://img.shields.io/github/package-json/dependency-version/andre347/next-website-andredevriesdev/next?filename=package.json" />
+<img src="https://img.shields.io/github/package-json/dependency-version/andre347/next-website-andredevriesdev/tailwindcss?filename=package.json" />
+</div>
+
 # My site on the interwebs 💻
+
 
 Repo for [andredevries.dev](https://andredevries.dev)
 
@@ -35,7 +46,7 @@ See the page running on:
 - https://brianlovin.com/
 - https://samselikoff.com
 
-## Useful blog posts that got me started
+## Useful blog posts
 
 - https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6
 - https://leerob.io/snippets/youtube
