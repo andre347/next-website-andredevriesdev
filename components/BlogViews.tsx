@@ -17,8 +17,8 @@ export default function BlogViews({ slug }) {
   }, [slug]);
   return (
     <>
-      `${viewCount > 0 ? viewCount.toLocaleString() : "0"} $
-      {viewCount === 1 ? "view" : "views"}`
+      {viewCount > 0 && viewCount !== 0 ? viewCount.toLocaleString() : "0"}
+      {viewCount === 1 ? " view" : " views"}
     </>
   );
 }

@@ -181,7 +181,6 @@ export default {
     },
     {
       name: "How to Embed Tableau in Salesforce",
-      videos: 9,
       description:
         "Two part courses that explains how to embed your Tableau content in Salesforce.",
       slug: "tableau-embed-salesforce",

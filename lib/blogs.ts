@@ -24,6 +24,7 @@ export function getSortedBlogsData() {
     };
   });
   return allBlogsData.sort((a, b) => {
+    // @ts-ignore
     if (a.date < b.date) {
       return 1;
     } else {
