@@ -22,6 +22,7 @@ function Courses() {
         {courses.list.map((course, idx) => {
           // calculate  duration
           const duration = course.videos.reduce((prev, current) => {
+            // @ts-ignore
             return prev + current?.length;
           }, 0);
           return (
