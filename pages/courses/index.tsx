@@ -24,6 +24,7 @@ function Courses() {
           const duration = course.videos.reduce((prev, current) => {
             // @ts-ignore
             return prev + current?.length;
+            // @ts-ignore
           }, 0);
           return (
             <div key={idx}>

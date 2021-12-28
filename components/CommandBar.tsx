@@ -8,7 +8,9 @@ import {
   KBarPositioner,
   KBarSearch,
   KBarResults,
+  ActionId,
 } from "kbar";
+import { ActionImpl } from "kbar/lib/action";
 
 const searchStyle = {
   padding: "12px 16px",
@@ -46,6 +48,7 @@ function RenderResults() {
       items={results}
       onRender={({ item, active }) =>
         typeof item === "string" ? (
+          // @ts-ignore
           <div style={groupNameStyle}>{item}</div>
         ) : (
           <ResultItem
@@ -60,7 +63,18 @@ function RenderResults() {
 }
 
 const ResultItem = React.forwardRef(
-  ({ action, active, currentRootActionId }) => {
+  (
+    {
+      action,
+      active,
+      currentRootActionId,
+    }: {
+      action: ActionImpl;
+      active: boolean;
+      currentRootActionId: ActionId;
+    },
+    ref: React.Ref<HTMLDivElement>
+  ) => {
     const ancestors = React.useMemo(() => {
       return (function collect(action, ancestors = []) {
         if (action.parent && action.parent.id !== currentRootActionId) {

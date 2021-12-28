@@ -25,7 +25,6 @@ function Dropdown({ dropdown, categories, setCategory, selectedCategory }) {
         >
           {categories.map((item, idx) => (
             <div
-              type="button"
               key={idx}
               onMouseDown={() => setCategory(item)}
               className={classForCategory(item)}
