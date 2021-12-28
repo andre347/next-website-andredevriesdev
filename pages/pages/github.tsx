@@ -5,7 +5,7 @@ import ProfileHeaderPage from "@/components/ProfileHeaderPage";
 import Skeleton from "@/components/Skeleton";
 import { fetcher } from "@/lib/helper";
 
-const githubTitle = "Most Popular Repos";
+const githubTitle: string = "Most Popular Repos";
 
 function GithubLayout({ children }) {
   return (

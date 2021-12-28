@@ -1,3 +1,4 @@
+import { GetStaticProps, GetStaticPaths } from "next";
 import { useState, useRef } from "react";
 import courses from "data/courses/courses";
 import Head from "next/head";
@@ -12,7 +13,7 @@ export default function Course({ slug, course }) {
   const [videoName, setVideoName] = useState(course.videos[0].title);
   const player = useRef(null);
 
-  const setVideoHandler = (videoId, videoName) => {
+  const setVideoHandler = (videoId: string, videoName?: string) => {
     setVideoId(videoId);
     setVideoName(videoName);
     if (window) {
@@ -124,7 +125,7 @@ export default function Course({ slug, course }) {
   );
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = courses.list.map((course) => ({
     params: {
       slug: course.slug,
@@ -134,9 +135,9 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-}
+};
 
-export async function getStaticProps({ params: { slug } }) {
+export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   const course = courses.list.filter((course) => course.slug === slug)[0];
   return {
     props: {
@@ -144,4 +145,4 @@ export async function getStaticProps({ params: { slug } }) {
       slug,
     },
   };
-}
+};

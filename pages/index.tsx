@@ -2,6 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 
+// TS stuff
+import { GetStaticProps } from "next";
+
 // get all the blogs
 import { getSortedBlogsData } from "@/lib/blogs";
 import Layout from "@/components/Layout";
@@ -57,8 +60,7 @@ const Home = ({ allBlogsData }) => {
 };
 
 // Static Generation of blog posts
-
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   // Get external data from the file system, API, DB, etc.
   const allBlogsData = getSortedBlogsData().slice(0, 3);
 
@@ -69,6 +71,6 @@ export async function getStaticProps() {
       allBlogsData,
     },
   };
-}
+};
 
 export default Home;

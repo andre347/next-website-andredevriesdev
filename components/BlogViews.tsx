@@ -15,7 +15,10 @@ export default function BlogViews({ slug }) {
 
     updateCount();
   }, [slug]);
-  return `${viewCount > 0 ? viewCount.toLocaleString() : "0"} ${
-    viewCount === 1 ? "view" : "views"
-  }`;
+  return (
+    <>
+      `${viewCount > 0 ? viewCount.toLocaleString() : "0"} $
+      {viewCount === 1 ? "view" : "views"}`
+    </>
+  );
 }

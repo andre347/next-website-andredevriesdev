@@ -1,4 +1,9 @@
-export function Layout({ children, pageMeta }) {
+type PageLayout = {
+  children: React.ReactNode;
+  pageMeta?: any;
+};
+
+export const Layout: React.FC<PageLayout> = ({ children, pageMeta }) => {
   const meta = {
     title: "Andre de Vries",
     description:
@@ -19,6 +24,6 @@ export function Layout({ children, pageMeta }) {
   };
   // divide-y-2 divide-orange-100
   return <div className="">{children}</div>;
-}
+};
 
 export default Layout;

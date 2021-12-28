@@ -6,7 +6,6 @@ import VideoSkeleton from "@/components/VideoSkeleton";
 
 const youtubeTitle = "Channel Stats";
 const videoTitle = "Recent Upload View Count";
-const skeletonArray = new Array(3);
 
 function YouTube() {
   const { data: youtubeState, error } = useSWR("/api/youtube", fetcher);
