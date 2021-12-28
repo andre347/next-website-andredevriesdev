@@ -44,11 +44,13 @@ export default async function handler(_, res) {
   });
 
   const response = await youtube.channels.list({
+    // @ts-ignore
     id: "UC6oFbYx6YjE596P-Ty8bVyg",
     part: "statistics",
   });
 
-  const channel = response.data.items[0];
+  // @ts-ignore
+  const channel = response?.data.items[0];
   const { subscriberCount, viewCount, videoCount } = channel.statistics;
   const videoStats = await getLatestVideos();
 
