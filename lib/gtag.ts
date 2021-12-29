@@ -3,8 +3,6 @@ const { NODE_ENV } = process.env;
 export const GA_TRACKING_ID =
   NODE_ENV !== "development" ? "UA-90804640-2" : null; // This is your GA Tracking ID
 
-(window as any).MyNamespace;
-
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
   (window as any).gTag("config", GA_TRACKING_ID, {
