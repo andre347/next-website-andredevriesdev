@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 
 // CMD + K package
 import CommandBar from "@/components/CommandBar";
+import { useAnalytics } from "@/lib/useAnalytics";
 
 const meta = {
   title: "Andre de Vries",
@@ -32,16 +33,17 @@ const meta = {
 };
 
 function App({ Component, pageProps }) {
-  const router = useRouter();
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+  // const router = useRouter();
+  // useEffect(() => {
+  //   const handleRouteChange = (url) => {
+  //     gtag.pageview(url);
+  //   };
+  //   router.events.on("routeChangeComplete", handleRouteChange);
+  //   return () => {
+  //     router.events.off("routeChangeComplete", handleRouteChange);
+  //   };
+  // }, [router.events]);
+  useAnalytics();
   return (
     <CommandBar>
       <div className="antialiased bg-white">
