@@ -11,14 +11,14 @@ module.exports = {
       "theinformationlab.co.uk", // for Information Lab Images
     ],
   },
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: securityHeaders,
-      },
-    ];
-  },
+  // async headers() {
+  //   return [
+  //     {
+  //       source: "/(.*)",
+  //       headers: securityHeaders,
+  //     },
+  //   ];
+  // },
   webpack: (config, { dev, isServer }) => {
     // RSS feed
     if (isServer) {
