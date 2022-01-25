@@ -1,3 +1,4 @@
+import Logos from "@/components/CompanyLogos";
 import Image from "next/image";
 
 function About() {
@@ -40,6 +41,7 @@ function About() {
             ranging from &apos;Working with APIs&apos; to &apos;Introduction to
             Regular Expressions&apos;.
           </p>
+          <Logos />
           <h3>Web Development</h3>
           <p>
             {`I really enjoy building web applications and integrating web technologies in all kinds of ways. You can call me a bit of a 'hybrid' developer - lots of the applications that I built are web based an integrate with other tools in the data analytics space. I mainly use web technologies to help others be successful with BI tools such as Tableau & Alteryx, and I have created many open-source packages to make life easier with these tools. My front-end framework of choice is React (Next.js) but I like writing backend code as much as front-end. Early on in my career as a data analyst I focused on Python but in the last few years I primarily write JavaScript & Typescript. If you want to get a sense of what I create, then head over to my`}{" "}
