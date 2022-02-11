@@ -5,6 +5,10 @@
     {
       "source": "/resume",
       "destination": "https://read.cv/andre347"
+    },
+    {
+      "source": "/projects",
+      "destination": "https://andredevries.notion.site/5d405f5a6cd84d799bd73617ff82faec?v=84501399f4ea4d59b5d8662509422932"
     }
   ]
 }

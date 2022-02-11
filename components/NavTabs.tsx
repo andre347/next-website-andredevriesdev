@@ -1,6 +1,5 @@
 import React from "react";
 import NavLink from "@/lib/NavLink";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 const navItems = [
@@ -10,6 +9,7 @@ const navItems = [
   { url: "/pages/github", id: "Github" },
   { url: "/pages/youtube", id: "YouTube" },
   { url: "/pages/about", id: "About" },
+  { url: "/projects", id: "Projects →" },
 ];
 
 const routes = {
