@@ -152,24 +152,25 @@ function Posts({ allBlogsData }) {
               <time dateTime={date}>{template.render(new Date(date))}</time>{" "}
               &bull; <span>{category}</span>
             </p>
-            <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-              <a className="block">
-                <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                  {title}
-                </h3>
-                <p className="mt-3 text-base leading-6 text-gray-500">
-                  {description}
-                </p>
-              </a>
+            <Link href={"/posts/[slug]"} as={`/posts/${id}`} className="block">
+
+              <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                {title}
+              </h3>
+              <p className="mt-3 text-base leading-6 text-gray-500">
+                {description}
+              </p>
+
             </Link>
             <div className="mt-3">
-              <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-                <a
-                  className="text-base leading-6 font-semibold text-orange-500 hover:text-orange-600 transition ease-in-out duration-150"
-                  aria-label={`Read "${title}"`}
-                >
+              <Link
+                href={"/posts/[slug]"}
+                as={`/posts/${id}`}
+                className="text-base leading-6 font-semibold text-orange-500 hover:text-orange-600 transition ease-in-out duration-150"
+                aria-label={`Read "${title}"`}>
+                
                   Read more &rarr;
-                </a>
+                
               </Link>
             </div>
           </div>

@@ -9,16 +9,15 @@ function Header() {
     <nav className="fixed top-0 z-30 bg-white left-0 right-0 max-w-3xl px-4 sm:px-6 xl:max-w-4xl xl:px-0 mx-auto">
       <header className="flex justify-between items-center py-10">
         <div onClick={() => setIsOpen(false)}>
-          <Link href="/">
-            <a
-              aria-label="andredevries.dev"
-              className="text-sm font-light text-gray-700 hover:text-gray-900 uppercase md:text-base lg:text-xl"
-            >
-              Andre{" "}
-              <span className="font-bold text-orange-500 hover:text-orange-600">
-                de Vries
-              </span>
-            </a>
+          <Link
+            href="/"
+            aria-label="andredevries.dev"
+            className="text-sm font-light text-gray-700 hover:text-gray-900 uppercase md:text-base lg:text-xl">
+            Andre{" "}
+            <span className="font-bold text-orange-500 hover:text-orange-600">
+              de Vries
+            </span>
+
           </Link>
         </div>
         {/* Header for non-mobile screens */}

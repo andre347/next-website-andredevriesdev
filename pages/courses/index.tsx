@@ -29,30 +29,30 @@ function Courses() {
           return (
             <div key={idx}>
               <Link href={"/courses/[slug]"} as={`/courses/${course.slug}`}>
-                <a>
-                  <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150">
-                    <p className="text-sm leading-5 text-gray-500">
-                      {course.videos.length + ` videos`} &bull;{" "}
-                      <span>{msToTime(duration)}</span>
-                    </p>
-                    <h3 className="text-xl leading-7 font-semibold text-gray-900 mt-2">
-                      {course.name}
-                    </h3>
-                    <p className="mt-2 text-base leading-6 text-gray-500">
-                      {course.description}
-                    </p>
-                    <div className="mt-2">
-                      <Link
-                        href={"/courses/[slug]"}
-                        as={`/courses/${course.slug}`}
-                      >
-                        <a className="text-base leading-6 font-semibold text-orange-500 hover:text-orange-600 transition ease-in-out duration-150">
-                          Learn more →
-                        </a>
-                      </Link>
-                    </div>
+
+                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150">
+                  <p className="text-sm leading-5 text-gray-500">
+                    {course.videos.length + ` videos`} &bull;{" "}
+                    <span>{msToTime(duration)}</span>
+                  </p>
+                  <h3 className="text-xl leading-7 font-semibold text-gray-900 mt-2">
+                    {course.name}
+                  </h3>
+                  <p className="mt-2 text-base leading-6 text-gray-500">
+                    {course.description}
+                  </p>
+                  <div className="mt-2">
+                    <Link
+                      href={"/courses/[slug]"}
+                      as={`/courses/${course.slug}`}
+                      className="text-base leading-6 font-semibold text-orange-500 hover:text-orange-600 transition ease-in-out duration-150">
+                      
+                        Learn more →
+                      
+                    </Link>
                   </div>
-                </a>
+                </div>
+
               </Link>
             </div>
           );
