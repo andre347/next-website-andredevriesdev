@@ -28,8 +28,8 @@ export default function BlogPost({ id, title, description, date, category }) {
         <div className="space-y-5 xl:col-span-4">
           <div className="space-y-6">
             <h2 className="text-2xl leading-8 font-bold tracking-tight">
-              <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-                <a className="text-gray-800">{title}</a>
+              <Link href={"/posts/[slug]"} as={`/posts/${id}`} className="text-gray-800">
+                {title}
               </Link>
             </h2>
             <div className="prose max-w-none text-gray-500 line-clamp-4">
@@ -37,13 +37,14 @@ export default function BlogPost({ id, title, description, date, category }) {
             </div>
           </div>
           <div className="text-base leading-6 font-medium">
-            <Link href={"/posts/[slug]"} as={`/posts/${id}`}>
-              <a
-                className="text-orange-500 hover:text-orange-600 transition ease-in-out duration-150 text-base leading-6"
-                aria-label={`Read "${title}"`}
-              >
+            <Link
+              href={"/posts/[slug]"}
+              as={`/posts/${id}`}
+              className="text-orange-500 hover:text-orange-600 transition ease-in-out duration-150 text-base leading-6"
+              aria-label={`Read "${title}"`}>
+              
                 Read more &rarr;
-              </a>
+              
             </Link>
           </div>
         </div>

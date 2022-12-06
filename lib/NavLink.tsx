@@ -11,7 +11,7 @@ const NavLink = ({ href, children }) => {
     removeSlug === href ? "bg-gray-200 text-gray-900" : "text-gray-500"
   }`;
 
-  return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
+  return <Link href={href} legacyBehavior>{React.cloneElement(children, { className })}</Link>;
 };
 
 export default NavLink;
