@@ -15,6 +15,9 @@ import Footer from "@/components/Footer";
 import CommandBar from "@/components/CommandBar";
 import { useAnalytics } from "@/lib/useAnalytics";
 
+// Vercel Analytics Beta
+import { Analytics } from "@vercel/analytics/react";
+
 const meta = {
   title: "Andre de Vries",
   twitterCard: "",
@@ -90,6 +93,7 @@ function App({ Component, pageProps }) {
           <Footer />
         </Section>
       </div>
+      <Analytics />
     </CommandBar>
   );
 }
