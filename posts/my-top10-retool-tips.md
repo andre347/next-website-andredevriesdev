@@ -1,7 +1,6 @@
 ---
 tags:
   - retool
-  - notion
 date: "2023-01-06"
 template: post
 draft: false
