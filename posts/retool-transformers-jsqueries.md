@@ -23,7 +23,7 @@ Within transformers you use the `{{ }}` notation to bring in data. The transform
 The two main use cases for transformers are:
 
 1. Data manipulation: modify the structure of your datasets or bring multiple result sets together. You can then reference them via `{{ transformer.value }}`
-1. Helper functions:
+1. Helper functions: move your in-line data transformations to transformers. You write a function to manipulate data once, and reference it throughout your application
 
 ## JavaScript Queries
 
