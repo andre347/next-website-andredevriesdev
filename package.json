@@ -16,7 +16,6 @@
     "@tailwindcss/ui": "^0.5.0",
     "@vercel/analytics": "^0.1.5",
     "autoprefixer": "^10.3.7",
-    "fathom-client": "^3.3.1",
     "googleapis": "^70.0.0",
     "gray-matter": "^4.0.2",
     "ioredis": "^5.2.4",

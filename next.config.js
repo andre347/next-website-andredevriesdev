@@ -30,7 +30,7 @@ module.exports = {
 
 const CSP = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com cdn.usefathom.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com;
   child-src *.youtube.com *.google.com;
   frame-src youtube.com www.youtube.com;
   style-src 'self' 'unsafe-inline' *;

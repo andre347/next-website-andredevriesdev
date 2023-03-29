@@ -23,11 +23,6 @@ export default class MyDocument extends Document {
           `,
             }}
           /> */}
-          <link
-            rel="preconnect"
-            href="https://cdn.usefathom.com"
-            crossOrigin=""
-          />
         </Head>
         <body>
           <Main />

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const meta = {
   description:
-    "I'm an Engineer who is passionate about working at the intersection of data engineering, web development and the cloud. I currently help developers build custom software remarkably fast @ Retool. Before Retool I spent nearly 7 years in data consultancy at The Information Lab.",
+    "I'm an Engineer who is passionate about working at the intersection of data, web development and the cloud. I currently help developers build business software remarkably fast @ Retool. Before Retool I spent nearly 7 years in data consultancy at The Information Lab.",
 };
 
 function Introduction() {

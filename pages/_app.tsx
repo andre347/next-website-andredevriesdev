@@ -13,7 +13,6 @@ import Footer from "@/components/Footer";
 
 // CMD + K package
 import CommandBar from "@/components/CommandBar";
-import { useAnalytics } from "@/lib/useAnalytics";
 
 // Vercel Analytics Beta
 import { Analytics } from "@vercel/analytics/react";
@@ -31,8 +30,7 @@ const meta = {
     "data visualization",
     "serverless",
   ],
-  description:
-    "Developer specialising in data engineering, web development & the cloud.",
+  description: "Developer specialised in data, web development & the cloud.",
 };
 
 function App({ Component, pageProps }) {
@@ -46,7 +44,7 @@ function App({ Component, pageProps }) {
   //     router.events.off("routeChangeComplete", handleRouteChange);
   //   };
   // }, [router.events]);
-  useAnalytics();
+
   return (
     <CommandBar>
       <div className="antialiased bg-white">
