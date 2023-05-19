@@ -10,50 +10,42 @@ function About() {
             Hello!
           </h1>
           <p className="text-xl text-gray-500 leading-8">
-            Hi! I am Andre 👋 and I am a Developer & Solutions Engineer. I
-            currently work for{" "}
+            Hi! I am Andre 👋 and I am a Software Engineer & Consultant who has
+            a passion for working with data. I currently work in the Success
+            Team at{" "}
             <a
-              href="https://theinformationlab.co.uk"
+              href="https://retool.com/"
               target="_blank"
+              className="text-orange-400"
               rel="noreferrer noopener"
             >
-              The Information Lab
+              Retool
             </a>{" "}
-            in London. My main role there is to help people see and understand
-            their data by using industry leading data analytics tools.
+            in London. My main role there is to help and enable customers to
+            successfully deploy, learn and scale Retool.
           </p>
         </div>
         <div className="max-w-7xl prose prose-lg text-gray-500 mx-auto">
           <p>
-            {`In the last few years I've been focusing more and more on building
-            and delivering educational content around data engineering & data visualisation
-            on the web. I really enjoy empowering others with modern data skills. I am also involved with our`}{" "}
+            I have been working as a consultant and developer for nearly 8 years
+            now. I started my career as a data analyst and rolled into
+            consulting and software development at{" "}
             <a
-              className="text-orange-400"
-              href="http://www.thedataschool.co.uk"
+              href="https://theinformationlab.co.uk/"
               target="_blank"
+              className="text-orange-400"
               rel="noreferrer noopener"
             >
-              Dataschool
-            </a>{" "}
-            - this is a 2-year program focused on creating the next batch of
-            great data analysts. At the Dataschool I teach various topics,
-            ranging from &apos;Working with APIs&apos; to &apos;Introduction to
-            Regular Expressions&apos;.
+              The Information Lab
+            </a>
+            . I have worked with many different companies across the globe, from
+            small startups to large enterprises. I have a passion for data and I
+            love to help others be successful with tools in the data space. I am
+            also a big fan of open-source software and I have created several
+            open-source tools to help others be successful with data.
           </p>
           <Logos />
-          <h3>Web Development</h3>
-          <p>
-            {`I really enjoy building web applications and integrating web technologies in all kinds of ways. You can call me a bit of a 'hybrid' developer - lots of the applications that I built are web based an integrate with other tools in the data analytics space. I mainly use web technologies to help others be successful with BI tools such as Tableau & Alteryx, and I have created many open-source packages to make life easier with these tools. My front-end framework of choice is React (Next.js) but I like writing backend code as much as front-end. Early on in my career as a data analyst I focused on Python but in the last few years I primarily write JavaScript & Typescript. If you want to get a sense of what I create, then head over to my`}{" "}
-            <a
-              href="https://www.github.com/andre347"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Github
-            </a>{" "}
-            page.
-          </p>
+          {/* 
           <figure>
             <Image
               className="w-full rounded-lg"
@@ -64,8 +56,8 @@ function About() {
               layout="intrinsic"
             />
             <figcaption>London DataDev 2019 Hackathon winners!</figcaption>
-          </figure>
-          <h3>What I do</h3>
+          </figure> */}
+          {/* <h3>What I do</h3>
           <p>
             During my career I have helped hundreds of companies getting into
             the Modern Data Stack, many of those firms in the Fortune 500. I
@@ -77,8 +69,8 @@ function About() {
             topics. Currently at The Information Lab I advise customers who want
             to build and architect public-facing data apps and want to monetise
             their BI and data insights.
-          </p>
-          <h3>DataDev Ambassador</h3>
+          </p> */}
+          {/* <h3>DataDev Ambassador</h3>
           <p>
             In 2020 I was elected as one of the first{" "}
             <a
@@ -100,7 +92,7 @@ function About() {
               come back
             </a>{" "}
             in the 2021 cohort! 🎉
-          </p>
+          </p> */}
           <h3>Certifications</h3>
           <ul>
             <li>Tableau Certified Trainer</li>
