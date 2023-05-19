@@ -5,7 +5,7 @@ export default function Logos() {
     <div className="bg-white">
       <div className="mx-auto py-6 px-4 sm:px-6 lg:py-8 lg:px-8">
         <p className="text-center text-base font-semibold uppercase text-gray-800">
-          Some of the organisations I worked with
+          Some of the organisations I have worked with
         </p>
         <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
           {logos.map((logo, idx) => {
