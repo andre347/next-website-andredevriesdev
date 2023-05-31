@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div className="relative py-8 bg-white overflow-hidden">
+    <div className="relative py-8  overflow-hidden">
       <div className="relative">
         <div className="text-lg max-w-5xl mx-auto mb-6">
           <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">

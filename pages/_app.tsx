@@ -47,7 +47,7 @@ function App({ Component, pageProps }) {
 
   return (
     <CommandBar>
-      <div className="antialiased bg-white">
+      <div className="antialiased bg-gradient-to-tr from-white via-white to-orange-50">
         <Head>
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
           <link
@@ -82,7 +82,7 @@ function App({ Component, pageProps }) {
         </Section>
         <Section>
           <Fragment>
-            <div className="py-28">
+            <div className="py-28 ">
               <Component {...pageProps} />
             </div>
           </Fragment>
