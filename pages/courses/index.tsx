@@ -29,8 +29,7 @@ function Courses() {
           return (
             <div key={idx}>
               <Link href={"/courses/[slug]"} as={`/courses/${course.slug}`}>
-
-                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150">
+                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150 bg-white/50">
                   <p className="text-sm leading-5 text-gray-500">
                     {course.videos.length + ` videos`} &bull;{" "}
                     <span>{msToTime(duration)}</span>
@@ -45,14 +44,12 @@ function Courses() {
                     <Link
                       href={"/courses/[slug]"}
                       as={`/courses/${course.slug}`}
-                      className="text-base leading-6 font-semibold text-orange-500 hover:text-orange-600 transition ease-in-out duration-150">
-                      
-                        Learn more →
-                      
+                      className="text-base leading-6 font-semibold text-orange-500 hover:text-orange-600 transition ease-in-out duration-150"
+                    >
+                      Learn more →
                     </Link>
                   </div>
                 </div>
-
               </Link>
             </div>
           );

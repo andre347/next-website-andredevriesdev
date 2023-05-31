@@ -22,7 +22,7 @@ function YouTube() {
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
             {youtubeState && !error && (
               <>
-                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150">
+                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150 bg-white/50">
                   <a
                     href="https://www.youtube.com/channel/UC6oFbYx6YjE596P-Ty8bVyg"
                     target="__blank"
@@ -36,7 +36,7 @@ function YouTube() {
                     )}
                   </p>
                 </div>
-                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150">
+                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150 bg-white/50">
                   <a
                     href="https://www.youtube.com/channel/UC6oFbYx6YjE596P-Ty8bVyg"
                     target="__blank"
@@ -48,7 +48,7 @@ function YouTube() {
                     {new Intl.NumberFormat().format(youtubeState.viewCount)}
                   </p>
                 </div>
-                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150">
+                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150 bg-white/50">
                   <a
                     href="https://www.youtube.com/channel/UC6oFbYx6YjE596P-Ty8bVyg"
                     target="__blank"
@@ -91,7 +91,7 @@ function YouTube() {
                   return (
                     <a
                       key={video.id}
-                      className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150"
+                      className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150 bg-white/50"
                       href={video.url}
                       target="__blank"
                       rel="noopener noreferrer"

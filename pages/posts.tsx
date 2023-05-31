@@ -147,30 +147,27 @@ function Posts({ allBlogsData }) {
 
       <div className="mt-4 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
         {filterBlogs.map(({ title, id, description, date, category }) => (
-          <div key={id}>
+          <div key={id} className="bg-white/50 rounded-xl border-2 px-4 py-4">
             <p className="text-sm leading-5 text-gray-500">
               <time dateTime={date}>{template.render(new Date(date))}</time>{" "}
               &bull; <span>{category}</span>
             </p>
             <Link href={"/posts/[slug]"} as={`/posts/${id}`} className="block">
-
               <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
                 {title}
               </h3>
               <p className="mt-3 text-base leading-6 text-gray-500">
                 {description}
               </p>
-
             </Link>
             <div className="mt-3">
               <Link
                 href={"/posts/[slug]"}
                 as={`/posts/${id}`}
                 className="text-base leading-6 font-semibold text-orange-500 hover:text-orange-600 transition ease-in-out duration-150"
-                aria-label={`Read "${title}"`}>
-                
-                  Read more &rarr;
-                
+                aria-label={`Read "${title}"`}
+              >
+                Read more &rarr;
               </Link>
             </div>
           </div>
