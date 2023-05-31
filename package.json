@@ -15,6 +15,7 @@
     "@tailwindcss/typography": "^0.4.0",
     "@tailwindcss/ui": "^0.5.0",
     "@vercel/analytics": "^0.1.5",
+    "@vercel/og": "^0.5.4",
     "autoprefixer": "^10.3.7",
     "googleapis": "^70.0.0",
     "gray-matter": "^4.0.2",
