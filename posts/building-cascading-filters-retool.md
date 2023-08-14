@@ -107,7 +107,7 @@ Even though this JavaScript is specific to our country > state > city hierarchy 
 2. Get the user selections from the filters. E.g the selected country & state
 3. Update the other filters based on the user selections
 
-# Configuring the components
+## Configuring the components
 
 Now that we have the logic for updating the available options for each filter, we can configure the components to use this logic. We will start with the country filter, and then apply the same logic to the state and city filters.
 
