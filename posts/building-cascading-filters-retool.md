@@ -24,7 +24,7 @@ With cascading filters, users can progressively refine their data views by selec
 
 The app that we will build in this guide is embedded below. Feel free to play around with it to get a feel for how cascading filters work:
 
-<iframe src="https://andre347.retool.com/apps/Demos/Cascading%20Filters?_embed=true" width="100%" height="550px">
+<iframe src="https://andre347.retool.com/embedded/public/1bb55dab-9a58-484b-b847-7e5585bc527c?_embed=true" width="100%" height="550px">
 
 ## Setting up the data
 
