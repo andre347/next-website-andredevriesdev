@@ -28,7 +28,7 @@ The app that we will build in this guide is embedded below. Feel free to play ar
 
 ## Setting up the data
 
-The structure of the data is importent when implementing cascading filters. In this example, we will use a dataset containing information about the population of cities in the United States and several countries in Europe. The dataset is structured as follows:
+The structure of the data is important when implementing cascading filters. In this example, we will use a dataset containing information about the population of cities in the United States and several countries in Europe. The dataset is structured as follows:
 
 ```
  [
