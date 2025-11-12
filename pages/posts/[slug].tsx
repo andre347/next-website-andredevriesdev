@@ -6,7 +6,8 @@ import BlogViews from "@/components/BlogViews";
 import CodeBlock from "@/components/Codeblock";
 import fs from "fs";
 import path from "path";
-import ReactMarkdown from "react-markdown/with-html";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import matter from "gray-matter";
 import tinytime from "tinytime";
 const template = tinytime("{MMMM} {DD}, {YYYY}");
@@ -64,11 +65,11 @@ export default function Blog({ content, frontmatter, slug }) {
       <div className="divide-y divide-orange-200 xl:pb-0 xl:col-span-4 xl:row-span-2">
         <div className="prose max-w-none pt-10 pb-8">
           <ReactMarkdown
-            escapeHtml={false}
-            source={content}
-            linkTarget={"_target='blank'"}
-            renderers={{ code: CodeBlock }}
-          />
+            rehypePlugins={[rehypeRaw]}
+            components={{ code: CodeBlock }}
+          >
+            {content}
+          </ReactMarkdown>
         </div>
       </div>
       <div className="text-base leading-6 font-medium border-t-2 border-orange-100 py-10">
