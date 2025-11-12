@@ -76,11 +76,17 @@ const ResultItem = React.forwardRef(
     ref: React.Ref<HTMLDivElement>
   ) => {
     const ancestors = React.useMemo(() => {
-      return (function collect(action, ancestors = []) {
-        if (action.parent && action.parent.id !== currentRootActionId) {
-          ancestors.push(action.parent);
-          if (action.parent.parent) {
-            collect(action.parent.parent, ancestors);
+      return (function collect(action: ActionImpl, ancestors: any[] = []): any[] {
+        const parent = action.parent;
+        if (parent && typeof parent !== 'string') {
+          // @ts-ignore - parent type definition issue with kbar
+          if (parent.id !== currentRootActionId) {
+            ancestors.push(parent);
+            // @ts-ignore - parent type definition issue with kbar
+            if (parent.parent) {
+              // @ts-ignore - parent type definition issue with kbar
+              collect(parent.parent, ancestors);
+            }
           }
         }
         return ancestors;

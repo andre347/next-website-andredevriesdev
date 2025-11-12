@@ -27,8 +27,8 @@ function About() {
         </div>
         <div className="max-w-7xl prose prose-lg text-gray-500 mx-auto">
           <p>
-            I have been working as a consultant and developer for nearly 8 years
-            now. I started my career as a data analyst and rolled into
+            I have been working as a consultant and developer for nearly 12
+            years now. I started my career as a data analyst and rolled into
             consulting and software development at{" "}
             <a
               href="https://theinformationlab.co.uk/"
