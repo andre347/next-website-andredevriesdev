@@ -2,6 +2,8 @@ import React from "react";
 import NavLink from "@/lib/NavLink";
 import { useRouter } from "next/router";
 
+import posthog from "posthog-js";
+
 const navItems = [
   { url: "/", id: "Home" },
   { url: "/posts", id: "Blogs" },
@@ -38,7 +40,16 @@ function NavTabs() {
           {navItems.map((item, idx) => {
             return (
               <NavLink href={item.url} key={item.url}>
-                <a aria-current="page">{item.id}</a>
+                <a
+                  aria-current="page"
+                  onClick={() => {
+                    if (item.url === "/projects") {
+                      posthog.capture("clicked_projects_link");
+                    }
+                  }}
+                >
+                  {item.id}
+                </a>
               </NavLink>
             );
           })}
