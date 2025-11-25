@@ -18,6 +18,15 @@ import CommandBar from "@/components/CommandBar";
 import { Analytics } from "@vercel/analytics/react";
 import Background from "@/components/background";
 
+// Geist Font
+import localFont from "next/font/local";
+
+const geistSans = localFont({
+  src: "../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2",
+  variable: "--font-geist-sans",
+  display: "swap",
+});
+
 // Posthog
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
@@ -76,10 +85,9 @@ function App({ Component, pageProps }) {
   return (
     <PostHogProvider client={posthog}>
       <CommandBar>
-        <div className="flex min-h-screen flex-col">
+        <div className={`flex min-h-screen flex-col font-sans ${geistSans.variable}`}>
           <div className="antialiased z-10">
             <Head>
-              <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
               <link
                 rel="apple-touch-icon"
                 sizes="180x180"
