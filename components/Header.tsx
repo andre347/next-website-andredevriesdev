@@ -9,11 +9,10 @@ function Header() {
   const scrolled = useScroll(50);
   return (
     <nav
-      className={`fixed top-0 z-30 left-0 right-0 max-w-3xl px-4 sm:px-6 xl:max-w-4xl xl:px-0 mx-auto transition-all ${
-        scrolled
+      className={`fixed top-0 z-30 left-0 right-0 max-w-3xl px-4 sm:px-6 xl:max-w-4xl xl:px-0 mx-auto transition-all ${scrolled
           ? "border-b border-gray-50 bg-white/50 backdrop-blur-xl"
           : "bg-white/0"
-      } `}
+        } `}
     >
       <header className="flex justify-between items-center py-10">
         <div onClick={() => setIsOpen(false)}>
@@ -29,10 +28,10 @@ function Header() {
           </Link>
         </div>
         {/* Header for non-mobile screens */}
-        <div className="text-base leading-5 hidden sm:block">
+        <div className="text-base leading-5 hidden md:block">
           <NavTabs />
         </div>
-        <div className="block sm:hidden">
+        <div className="block md:hidden">
           <button
             className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-expanded="false"
@@ -79,7 +78,7 @@ function Header() {
 
 function MobileHeader({ isOpen, setIsOpen }) {
   return (
-    <div className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
+    <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
       <div className="px-2 pt-2 pb-3 space-y-1">
         {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
         <MobileNavLink href="/posts">

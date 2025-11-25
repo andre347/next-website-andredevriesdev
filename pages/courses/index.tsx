@@ -18,7 +18,7 @@ function Courses() {
         <p className="text-lg leading-7 text-gray-500">{courses.subTitle}</p>
       </div>
 
-      <div className="mt-4 grid gap-12 border-t-2 border-gray-100 pt-10 lg:grid-cols-1 lg:col-gap-5 lg:row-gap-12">
+      <div className="mt-4 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
         {courses.list.map((course, idx) => {
           // calculate  duration
           const duration = course.videos.reduce((prev, current) => {
@@ -29,7 +29,7 @@ function Courses() {
           return (
             <div key={idx}>
               <Link href={"/courses/[slug]"} as={`/courses/${course.slug}`}>
-                <div className="border border-gray-200 rounded-lg p-4 max-w-72 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150 bg-white/50">
+                <div className="border border-gray-200 rounded-lg p-4 w-full cursor-pointer hover:border-gray-300 ease-in-out duration-150 bg-white/50">
                   <p className="text-sm leading-5 text-gray-500">
                     {course.videos.length + ` videos`} &bull;{" "}
                     <span>{msToTime(duration)}</span>

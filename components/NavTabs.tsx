@@ -1,6 +1,7 @@
 import React from "react";
 import NavLink from "@/lib/NavLink";
 import { useRouter } from "next/router";
+import { useKBar } from "kbar";
 
 import posthog from "posthog-js";
 
@@ -29,14 +30,15 @@ const defaultRoutes = [routes.home, routes.about];
 
 function NavTabs() {
   const router = useRouter();
+  const { query } = useKBar();
   const currPathName = router.pathname;
   const routesAsArr = Object.keys(routes).map((r) => routes[r]);
 
   return (
     // <div className="py-4 mt-2">
-    <div className="hidden sm:block">
+    <div className="hidden md:block">
       <div className="">
-        <nav className="flex" aria-label="Tabs">
+        <nav className="flex items-center" aria-label="Tabs">
           {navItems.map((item, idx) => {
             return (
               <NavLink href={item.url} key={item.url}>
@@ -53,6 +55,32 @@ function NavTabs() {
               </NavLink>
             );
           })}
+          <button
+            aria-label="Search"
+            type="button"
+            onClick={query.toggle}
+            className="ml-4 p-1 text-gray-500 hover:text-gray-900 border border-gray-200 rounded-md text-xs font-medium px-2"
+          >
+            <span className="sr-only">Cmd+K</span>
+            <span className="flex items-center">
+              <svg
+                className="w-3 h-3 mr-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"
+                ></path>
+              </svg>
+              K
+            </span>
+
+          </button>
         </nav>
         {/* <div className="hidden max-w-screen-md grid-cols-4 gap-1 mx-auto md:grid">
           {defaultRoutes.map((route) => {
