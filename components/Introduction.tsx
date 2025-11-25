@@ -90,6 +90,15 @@ function Introduction() {
           >
             YouTube
           </a>
+          <span>•</span>
+          <a
+            className="text-gray-500 hover:text-gray-900"
+            href="https://bsky.app/profile/andredevries.dev"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            Bluesky
+          </a>
         </div>
       </div>
     </div>

@@ -98,9 +98,8 @@ const ResultItem = React.forwardRef(
         style={{
           padding: "8px 16px",
           background: active ? "var(--a1)" : "transparent",
-          borderLeft: `2px solid ${
-            active ? "var(--sideBorder)" : "transparent"
-          }`,
+          borderLeft: `2px solid ${active ? "var(--sideBorder)" : "transparent"
+            }`,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -171,6 +170,12 @@ const ResultItem = React.forwardRef(
     );
   }
 );
+
+const positionerStyle = {
+  zIndex: 100,
+  background: "rgba(0, 0, 0, 0.2)",
+  backdropFilter: "blur(2px)",
+};
 
 export default function CommandBar(props) {
   const router = useRouter();
@@ -262,6 +267,15 @@ export default function CommandBar(props) {
       perform: () => window.open("https://dev.to/andre347", "_blank"),
     },
     {
+      id: "blueskyAction",
+      name: "Bluesky",
+      shortcut: ["bl"],
+      keywords: "social contact dm bluesky",
+      section: "Contact",
+      perform: () =>
+        window.open("https://bsky.app/profile/andredevries.dev", "_blank"),
+    },
+    {
       id: "copy",
       name: "Copy URL",
       shortcut: ["u"],
@@ -304,7 +318,7 @@ export default function CommandBar(props) {
       actions={actions}
     >
       <KBarPortal>
-        <KBarPositioner>
+        <KBarPositioner style={positionerStyle}>
           <KBarAnimator style={animatorStyle}>
             <KBarSearch style={searchStyle} />
             <RenderResults />
