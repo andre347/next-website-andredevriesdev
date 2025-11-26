@@ -21,6 +21,7 @@ const searchStyle = {
   border: "none",
   background: "var(--background)",
   color: "var(--foreground)",
+  fontFamily: "var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
 };
 
 const animatorStyle = {
@@ -31,6 +32,7 @@ const animatorStyle = {
   borderRadius: "8px",
   overflow: "hidden",
   boxShadow: "var(--shadow)",
+  fontFamily: "var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
 };
 
 const groupNameStyle = {
